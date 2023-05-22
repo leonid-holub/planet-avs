@@ -13,7 +13,7 @@ return (
                 <p className={style.paragraph}>{t('articles.articles')}</p>
             </div>
             <div className={style.articles__wrapper}>
-                <img className={style.articles__img} src="images/logo/horse-3.jpg" alt="paint horse" />
+                <img className={style.articles__img} src="/public/images/logo/horse-3.jpg" alt="paint horse" />
             </div>
         </div>
     </section>
