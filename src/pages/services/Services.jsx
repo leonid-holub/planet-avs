@@ -12,7 +12,7 @@ const Services = () => {
                     <p className={style.paragraph}>{t('services.services')}</p>
                 </div>
                 <div className={style.services__wrapper}>
-                    <img className={style.services__img} src="/images/logo/horse-3.jpg" alt="paint horse" />
+                    <img className={style.services__img} src="../../../public/images/logo/horse-3.jpg" alt="paint horse" />
                 </div>
             </div>
         </section>

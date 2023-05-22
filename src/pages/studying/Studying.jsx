@@ -12,7 +12,7 @@ const Studying = () => {
                     <p className={style.paragraph}>{t('studying.studying')}</p>
                 </div>
                 <div className={style.studying__wrapper}>
-                    <img className={style.studying__img} src="/images/logo/horse-3.jpg" alt="paint horse" />
+                    <img className={style.studying__img} src="../../../public/images/logo/horse-3.jpg" alt="paint horse" />
                 </div>
             </div>
         </section>

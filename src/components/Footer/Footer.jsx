@@ -47,7 +47,7 @@ return (
 									aria-label="Instagram"
 								>
 									<svg className={style["footer-socials__icon"]} width="20px" height="20px">
-										<use href="/images/icons.svg#instagram"></use>
+										<use href="../../../public/images/icons.svg#instagram"></use>
 									</svg>
 								</a>
 							</li>
@@ -60,7 +60,7 @@ return (
 									aria-label="Twitter"
 								>
 									<svg className={style["footer-socials__icon"]} width="20px" height="20px">
-										<use href="/images/icons.svg#twitter"></use>
+										<use href="../../../public/images/icons.svg#twitter"></use>
 									</svg>
 								</a>
 							</li>
@@ -73,7 +73,7 @@ return (
 									aria-label="Facebook"
 								>
 									<svg className={style["footer-socials__icon"]} width="20px" height="20px">
-										<use href="/images/icons.svg#facebook"></use>
+										<use href="../../../public/images/icons.svg#facebook"></use>
 									</svg>
 								</a>
 							</li>
@@ -86,7 +86,7 @@ return (
 									aria-label="LinkedIn"
 								>
 									<svg className={style["footer-socials__icon"]} width="20px" height="20px">
-										<use href="/images/icons.svg#linkedin"></use>
+										<use href="../../../public/images/icons.svg#linkedin"></use>
 									</svg>
 								</a>
 							</li>

@@ -12,7 +12,7 @@ const Home = () => {
                     <p className={style.paragraph}>{t('home.avs')}</p>
                 </div>
                 <div className={style.hero__wrapper}>
-                    <img className={style.hero__img} src="/images/logo/horse-3.jpg" alt="paint horse" />
+                    <img className={style.hero__img} src="../../../public/images/logo/horse-3.jpg" alt="paint horse" />
                 </div>
             </div>
         </section>

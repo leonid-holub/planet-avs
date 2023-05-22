@@ -12,7 +12,7 @@ const Events = () => {
                     <p className={style.paragraph}>{t('events.events')}</p>
                 </div>
                 <div className={style.events__wrapper}>
-                    <img className={style.events__img} src="/images/logo/horse-3.jpg" alt="paint horse" />
+                    <img className={style.events__img} src="../../../public/images/logo/horse-3.jpg" alt="paint horse" />
                 </div>
             </div>
         </section>
