@@ -12,7 +12,7 @@ const Membership = () => {
                     <p className={style.paragraph}>{t('membership.membership')}</p>
                 </div>
                 <div className={style.membership__wrapper}>
-                    <img className={style.membership__img} src="../../../public/images/logo/horse-3.jpg" alt="paint horse" />
+                    <img className={style.membership__img} src="images/logo/horse-3.jpg" alt="paint horse" />
                 </div>
             </div>
         </section>
