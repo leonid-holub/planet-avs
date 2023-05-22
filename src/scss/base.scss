@@ -1,0 +1,79 @@
+@import "/src/scss/variables.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    color: $main-text-color;
+    font-family: $main-font;
+    font-size: 14px;
+}
+  
+  //margin reset
+h1,
+h2,
+h3,
+ul,
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+  
+  // No-gap Images
+  
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
+  
+a {
+  text-decoration: none;
+}
+
+a.active {
+  color: $accent-color;
+}
+
+ //ul
+ ul {
+  padding-left: 0;
+    list-style: none;
+ }
+
+
+  //container
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+}
+
+.szh-menu {
+  margin-top: 5px;
+  min-width: 0 !important;
+  // left: -21.5px !important;
+  // top: 15px !important;
+  // background-color: transparent;
+  // backdrop-filter: blur(40px) contrast(10%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}

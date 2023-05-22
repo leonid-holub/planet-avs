@@ -1,0 +1,40 @@
+@import "/src/scss/variables.scss";
+
+.hero {
+    height: 600px;
+    background-color: rgb(216, 214, 215);
+}
+
+.container {
+    width: 1280px;
+    height: calc(80vh - 110px);
+    padding: 0 12px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 600;
+    color: $accent-color;
+    text-align: center;
+}
+
+.paragraph {
+    font-size: 40px;
+    font-weight: 300;
+    color: $darkgrey-text-color;
+    text-align: center;
+}
+
+.hero__img {
+    width: 500px;
+}

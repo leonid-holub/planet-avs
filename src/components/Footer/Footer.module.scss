@@ -1,0 +1,148 @@
+@import "/src/scss/variables.scss";
+
+.footer {
+	background-color: $secondary-background-color;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.logo__img {
+    width: 200px;
+}
+
+.footer__container {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: row;
+	gap: 93px;
+}
+
+.footer__container--left {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: baseline;
+	gap: 70px;
+}
+
+.footer__inform {
+	text-align: left;
+}
+
+.footer__logo {
+	display: block;
+	color: white;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-link {
+	color: white;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+}
+
+.footer__contact-link {
+	color: $grey-text-color;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	margin-bottom: 50px;
+
+	transition: color $anim;
+
+	&:hover,
+	:focus {
+		color: $accent-color;
+	}
+}
+
+.footer-socials__title {
+	color: white;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-socials {
+	margin-top: 12px;
+	text-align: left;
+}
+
+.footer-socials__list {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-socials__link {
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $main-social-link-color;
+	border-radius: 30%;
+
+	transition: background-color $anim;
+
+	&:hover,
+	:focus {
+		background-color: $accent-color;
+	}
+}
+
+.footer-socials__icon {
+	fill: white;
+}
+
+/* Лого */
+.logo {
+	display: flex;
+	color: $secondary-text-color;
+	font-weight: 700;
+	font-size: 24px;
+	align-items: center;
+	line-height: 1.2;
+
+}
+
+pre {
+    font-family: inherit;
+}
+
+/* Колір для першої частини лого */
+.logo__first-part {
+	color: $accent-color;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	// @include mq(mob) {
+	// 	width: 480px;
+	// }
+
+	// @include mq(tab) {
+	// 	width: 768px;
+	// }
+
+    width: 1280px;
+
+}
