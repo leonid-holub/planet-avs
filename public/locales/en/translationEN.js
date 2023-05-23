@@ -32,9 +32,22 @@ const translationEN = {
     },
     services: {
         services: 'Provision of medical services',
+        surgery: 'Surgery',
+        therapy: 'Therapy',
+        laboratory_research: 'Laboratory research',
+        vaccinations: 'Preventive vaccinations',
+        ophthalmology: 'Ophthalmology',
+        obstetrics: ' Obstetrics and gynecology',
+        x_ray: 'X-ray',
+        bridle: 'UZD',
     },
     studying: {
         studying: 'Education and courses',
+        bridle: 'UZD',
+        grooming: 'Grooming',
+        laboratory_case: 'Laboratory case',
+        animal_care: 'Animal care',
+        diet: 'Diet therapy for animals',
     },
     home: {
         avs: 'Association of Veterinarians',
@@ -42,7 +55,17 @@ const translationEN = {
     footer: {
         socials: 'Social networks',
         location: 'Kyiv, 26 Lesi Ukrainky Avenue',
-    }
+    },
+    menuModal: {
+        history: 'History and founders',
+        membership: 'Membership',
+        insurance: 'Advocacy and insurance',
+        studying: 'Education and courses',
+        internship: 'Internship',
+        services: 'Provision of medical services',
+        articles: 'Video projects, stories and monologues',
+        events: 'Events and participation in conferences',
+    },
 };
 
 export default translationEN;

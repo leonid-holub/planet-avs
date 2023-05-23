@@ -6,7 +6,6 @@
     right: 0;
     width: 100vw;
     height: calc(100vh - 97px);
-    overflow: hidden;
 }
 
 .menu.active {
@@ -22,11 +21,11 @@
     backdrop-filter: blur(2px);
     position: absolute;
     right: -100%;
-    transform: translateX(+130%);
+    transform: translateX(+140%);
     transition: all 0.2s;
     
     @media screen and (min-width: 768px) {
-        right: 30%;
+        right: 40%;
     }
 }
 
@@ -38,12 +37,13 @@
     flex-direction: column;
     align-items: center;
     margin-left: auto;
+    padding: 10px 0;
     overflow: auto;
     transition: all 0.4s;
     transform: translateX(+100%);
 
     @media screen and (min-width: 768px) {
-        width: 30%;
+        width: 40%;
     }
 }
 
@@ -71,6 +71,3 @@
     font-family: $main-font;
     font-weight: 500;
 }   
-
-.paragraph {
-}

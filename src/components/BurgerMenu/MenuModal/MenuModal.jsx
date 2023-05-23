@@ -14,28 +14,28 @@ const { t } = useTranslation()
                 <div className={style.menu__content} onClick={e => e.stopPropagation()}>
                     <ul className={style.menu__list}>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="history"><p className={style.paragraph}><Trans>{t('nav.history')}</Trans></p></NavLink>
+                            <NavLink className={style.link} to="history"><p className={style.paragraph}><Trans>{t('menuModal.history')}</Trans></p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="membership"><p className={style.paragraph}>{t('nav.membership')}</p></NavLink>
+                            <NavLink className={style.link} to="membership"><p className={style.paragraph}>{t('menuModal.membership')}</p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="insurance"><p className={style.paragraph}><Trans>{t('nav.insurance')}</Trans></p></NavLink>
+                            <NavLink className={style.link} to="insurance"><p className={style.paragraph}><Trans>{t('menuModal.insurance')}</Trans></p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="studying"><p className={style.paragraph}><Trans>{t('nav.studying')}</Trans></p></NavLink> 
+                            <NavLink className={style.link} to="studying"><p className={style.paragraph}><Trans>{t('menuModal.studying')}</Trans></p></NavLink> 
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="internship"><p className={style.paragraph}>{t('nav.internship')}</p></NavLink>
+                            <NavLink className={style.link} to="internship"><p className={style.paragraph}>{t('menuModal.internship')}</p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="services"><p className={style.paragraph}><Trans>{t('nav.services')}</Trans></p></NavLink>
+                            <NavLink className={style.link} to="services"><p className={style.paragraph}><Trans>{t('menuModal.services')}</Trans></p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="articles"><p className={style.paragraph}><Trans>{t('nav.articles')}</Trans></p></NavLink>
+                            <NavLink className={style.link} to="articles"><p className={style.paragraph}><Trans>{t('menuModal.articles')}</Trans></p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="events"><p className={style.paragraph}><Trans>{t('nav.events')}</Trans></p></NavLink>
+                            <NavLink className={style.link} to="events"><p className={style.paragraph}><Trans>{t('menuModal.events')}</Trans></p></NavLink>
                         </li>
                     </ul> 
                 </div>
@@ -44,28 +44,28 @@ const { t } = useTranslation()
                 <div className={style.menu__content}>
                     <ul className={style.menu__list}>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="history"><p className={style.paragraph}><Trans>{t('nav.history')}</Trans></p></NavLink>
+                            <NavLink className={style.link} to="history"><p className={style.paragraph}><Trans>{t('menuModal.history')}</Trans></p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="membership"><p className={style.paragraph}>{t('nav.membership')}</p></NavLink>
+                            <NavLink className={style.link} to="membership"><p className={style.paragraph}>{t('menuModal.membership')}</p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="insurance"><p className={style.paragraph}><Trans>{t('nav.insurance')}</Trans></p></NavLink>
+                            <NavLink className={style.link} to="insurance"><p className={style.paragraph}><Trans>{t('menuModal.insurance')}</Trans></p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="studying"><p className={style.paragraph}><Trans>{t('nav.studying')}</Trans></p></NavLink> 
+                            <NavLink className={style.link} to="studying"><p className={style.paragraph}><Trans>{t('menuModal.studying')}</Trans></p></NavLink> 
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="internship"><p className={style.paragraph}>{t('nav.internship')}</p></NavLink>
+                            <NavLink className={style.link} to="internship"><p className={style.paragraph}>{t('menuModal.internship')}</p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="services"><p className={style.paragraph}><Trans>{t('nav.services')}</Trans></p></NavLink>
+                            <NavLink className={style.link} to="services"><p className={style.paragraph}><Trans>{t('menuModal.services')}</Trans></p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="articles"><p className={style.paragraph}><Trans>{t('nav.articles')}</Trans></p></NavLink>
+                            <NavLink className={style.link} to="articles"><p className={style.paragraph}><Trans>{t('menuModal.articles')}</Trans></p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="events"><p className={style.paragraph}><Trans>{t('nav.events')}</Trans></p></NavLink>
+                            <NavLink className={style.link} to="events"><p className={style.paragraph}><Trans>{t('menuModal.events')}</Trans></p></NavLink>
                         </li>
                     </ul> 
                 </div>

@@ -1,7 +1,10 @@
 import { NavLink, Link } from "react-router-dom";
 import { useTranslation, Trans } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { ControlledMenu, MenuItem, useHover, useMenuState } from '@szhsin/react-menu';
+import '@szhsin/react-menu/dist/index.css';
+import '@szhsin/react-menu/dist/transitions/slide.css';
 
 import style from './AppBar.module.scss';
 import { LanguagesSwitcher } from "../LanguageSwitcher/LanguageSwitcher";
@@ -9,11 +12,14 @@ import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 const AppBar = () => {
     const [bmIsOpen, setBmIsOpen] = useState(false);
+    const ref = useRef(null);
+    // const ref2 = useRef(null);
+    const [menuState, toggle] = useMenuState({ transition: true });
+    // const [menuState2, toggle2] = useMenuState({ transition: true });
+    const { anchorProps, hoverProps } = useHover(menuState.state, toggle);
+    // const { anchorProps2, hoverProps2 } = useHover(menuState2.state, toggle2);
     const { t } = useTranslation();
-    const isMobile = useMediaQuery({ maxWidth: 767 });
-    const isTablet = useMediaQuery({ minWidth: 768 });
     const isDesktop = useMediaQuery({ minWidth: 1280 });
-    const isNotDesktop = useMediaQuery({ maxWidth: 1279 });
 
     const toggleBmIsOpen = () => {
         setBmIsOpen(!bmIsOpen);
@@ -27,36 +33,65 @@ const AppBar = () => {
                         <img className={style.logo__img} src="images/logo/photo_2023-05-17_17-39-46-fotor-bg-remove.png" alt="horse"/>                   
                     </Link>
                 </div>
-                {isDesktop ? 
-                <nav className={style.nav}>
-                    <ul className={style.list}>
-                        <li className={style.item}>
-                            <NavLink className={style.link} to="history"><p className={style.paragraph}><Trans>{t('nav.history')}</Trans></p></NavLink>
-                        </li>
-                        <li className={style.item}>
-                            <NavLink className={style.link} to="membership"><p className={style.paragraph}>{t('nav.membership')}</p></NavLink>
-                        </li>
-                        <li className={style.item}>
-                            <NavLink className={style.link} to="insurance"><p className={style.paragraph}><Trans>{t('nav.insurance')}</Trans></p></NavLink>
-                        </li>
-                        <li className={style.item}>
-                            <NavLink className={style.link} to="studying"><p className={style.paragraph}><Trans>{t('nav.studying')}</Trans></p></NavLink> 
-                        </li>
-                        <li className={style.item}>
-                            <NavLink className={style.link} to="internship"><p className={style.paragraph}>{t('nav.internship')}</p></NavLink>
-                        </li>
-                        <li className={style.item}>
-                        <NavLink className={style.link} to="services"><p className={style.paragraph}><Trans>{t('nav.services')}</Trans></p></NavLink>
-                        </li>
-                        <li className={style.item}>
-                            <NavLink className={style.link} to="articles"><p className={style.paragraph}><Trans>{t('nav.articles')}</Trans></p></NavLink>
-                        </li>
-                        <li className={style.item}>
-                            <NavLink className={style.link} to="events"><p className={style.paragraph}><Trans>{t('nav.events')}</Trans></p></NavLink>
-                        </li>
-                    </ul>    
-                </nav> : <> <LanguagesSwitcher /> <BurgerMenu.MenuButton toggleBmIsOpen={toggleBmIsOpen}  bmIsOpen={bmIsOpen}/> <BurgerMenu.MenuModal bmIsOpen={bmIsOpen} setBmIsOpen={setBmIsOpen}/> </>}
-                {isDesktop ? <LanguagesSwitcher /> : ''}
+                <div className={style.navigation__wrapper}>
+                    {isDesktop ? 
+                    <nav className={style.nav}>
+                        <ul className={style.list}>
+                            <li className={style.item}>
+                                <NavLink className={style.link} to="history"><p className={style.paragraph}><Trans>{t('nav.history')}</Trans></p></NavLink>
+                            </li>
+                            <li className={style.item}>
+                                <NavLink className={style.link} to="membership"><p className={style.paragraph}>{t('nav.membership')}</p></NavLink>
+                            </li>
+                            <li className={style.item}>
+                                <NavLink className={style.link} to="insurance"><p className={style.paragraph}><Trans>{t('nav.insurance')}</Trans></p></NavLink>
+                            </li>
+                            <li className={style.item} ref={ref} {...anchorProps}>
+                                <NavLink className={style.link} to="studying"><p className={style.paragraph}><Trans>{t('nav.studying')}</Trans></p></NavLink> 
+                                <ControlledMenu
+                                    {...hoverProps}
+                                    {...menuState}
+                                    anchorRef={ref}
+                                    arrow={"arrow"}
+                                    onClose={() => toggle(false)}>
+                                    <MenuItem>{t('studying.bridle')}</MenuItem>
+                                    <MenuItem>{t('studying.grooming')}</MenuItem>
+                                    <MenuItem>{t('studying.laboratory_case')}</MenuItem>
+                                    <MenuItem>{t('studying.animal_care')}</MenuItem>
+                                    <MenuItem>{t('studying.diet')}</MenuItem>
+                                </ControlledMenu>
+                            </li>
+                            <li className={style.item}>
+                                <NavLink className={style.link} to="internship"><p className={style.paragraph}>{t('nav.internship')}</p></NavLink>
+                            </li>
+                            <li className={style.item} >
+                            <NavLink className={style.link} to="services"><p className={style.paragraph}><Trans>{t('nav.services')}</Trans></p></NavLink>
+                            {/* <ControlledMenu
+                                    {...hoverProps2}
+                                    {...menuState2}
+                                    anchorRef={ref2}
+                                    arrow={"arrow"}
+                                    onClose={() => toggle2(false)}>
+                                    <MenuItem>{t('services.surgery')}</MenuItem>
+                                    <MenuItem>{t('services.therapy')}</MenuItem>
+                                    <MenuItem>{t('services.laboratory_research')}</MenuItem>
+                                    <MenuItem>{t('services.vaccinations')}</MenuItem>
+                                    <MenuItem>{t('services.ophthalmology')}</MenuItem>
+                                    <MenuItem>{t('services.obstetrics')}</MenuItem>
+                                    <MenuItem>{t('services.x_ray')}</MenuItem>
+                                    <MenuItem>{t('services.bridle')}</MenuItem>
+                                </ControlledMenu> */}
+                            </li>
+                            <li className={style.item}>
+                                <NavLink className={style.link} to="articles"><p className={style.paragraph}><Trans>{t('nav.articles')}</Trans></p></NavLink>
+                            </li>
+                            <li className={style.item}>
+                                <NavLink className={style.link} to="events"><p className={style.paragraph}><Trans>{t('nav.events')}</Trans></p></NavLink>
+                            </li>
+                        </ul>    
+                    </nav> : <> <LanguagesSwitcher /> <BurgerMenu.MenuButton toggleBmIsOpen={toggleBmIsOpen}  bmIsOpen={bmIsOpen}/> <BurgerMenu.MenuModal bmIsOpen={bmIsOpen} setBmIsOpen={setBmIsOpen}/> </>}
+                    {isDesktop ? <LanguagesSwitcher /> : ''}
+                </div>
             </div>
         </header>
     )
