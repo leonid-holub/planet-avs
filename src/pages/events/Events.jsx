@@ -6,7 +6,7 @@ const Events = () => {
 
     return (
         <section className={style.events}>
-            <div className={`${style.container} ${style.events__container}`}>
+            <div className={`container ${style.events__container}`}>
                 <div className={style.events__text}>
                     <h1 className={style.title}>{t('base.page')}</h1>
                     <p className={style.paragraph}>{t('events.events')}</p>

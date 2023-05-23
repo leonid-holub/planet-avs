@@ -1,17 +1,7 @@
 @import "/src/scss/variables.scss";
 
 .hero {
-    height: 600px;
     background-color: rgb(216, 214, 215);
-}
-
-.container {
-    width: 1280px;
-    height: calc(80vh - 110px);
-    padding: 0 12px;
-    margin-left: auto;
-    margin-right: auto;
-
 }
 
 .hero__container {
@@ -22,19 +12,32 @@
 }
 
 .title {
-    font-size: 70px;
+    font-size: 24px;
     font-weight: 600;
     color: $accent-color;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        font-size: 35px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        font-size: 70px;
+        font-weight: 600;
+    }
 }
 
 .paragraph {
-    font-size: 40px;
+    font-size: 14px;
     font-weight: 300;
     color: $darkgrey-text-color;
     text-align: center;
-}
 
-.hero__img {
-    width: 500px;
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        font-size: 40px;
+    }
 }

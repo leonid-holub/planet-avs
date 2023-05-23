@@ -6,7 +6,7 @@ const Studying = () => {
 
     return (
         <section className={style.studying}>
-            <div className={`${style.container} ${style.studying__container}`}>
+            <div className={`container ${style.studying__container}`}>
                 <div className={style.studying__text}>
                     <h1 className={style.title}>{t('base.page')}</h1>
                     <p className={style.paragraph}>{t('studying.studying')}</p>

@@ -1,13 +1,12 @@
 @import "/src/scss/variables.scss";
-.header {
-    box-shadow: $secondary-box-shadow;
-}
 
-.container {
-    width: 1280px;
-    padding: 10px 16px;
-    margin-left: auto;
-    margin-right: auto;
+.header {
+    position: sticky;
+    top: -1px;
+    z-index: 10;
+    box-shadow: $secondary-box-shadow;
+    background-color: $main-background-color;
+    height: 97px;
 }
 
 .header__container {
@@ -59,4 +58,5 @@
 
 .paragraph {
     text-align: center;
+    font-weight: 500;
 }

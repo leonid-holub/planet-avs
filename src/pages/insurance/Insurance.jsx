@@ -6,7 +6,7 @@ const Insurance = () => {
 
     return (
         <section className={style.insurance}>
-            <div className={`${style.container} ${style.insurance__container}`}>
+            <div className={`container ${style.insurance__container}`}>
                 <div className={style.insurance__text}>
                     <h1 className={style.title}>{t('base.page')}</h1>
                     <p className={style.paragraph}>{t('insurance.insurance')}</p>

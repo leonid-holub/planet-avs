@@ -6,7 +6,7 @@ const Footer = () => {
 	const { t } = useTranslation();
 return (
     <footer className={style.footer}>
-		<div className={`${style.footer__container} ${style.container}`}>
+		<div className={`${style.footer__container} container`}>
 			<div className={style.logo}>
                 <Link to="/">
                     <img className={style.logo__img} src="images/logo/photo_2023-05-17_17-39-46-fotor-bg-remove.png" alt="horse"/>                   

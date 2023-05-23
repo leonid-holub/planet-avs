@@ -6,7 +6,7 @@ const History = () => {
 
 return (
     <section className={style.history}>
-        <div className={`${style.container} ${style.history__container}`}>
+        <div className={`container ${style.history__container}`}>
             <div className={style.history__text}>
                 <h1 className={style.title}>{t('base.page')}</h1>
                 <p className={style.paragraph}>{t('history.history')}</p>

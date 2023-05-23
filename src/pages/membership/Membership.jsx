@@ -6,7 +6,7 @@ const Membership = () => {
 
     return (
         <section className={style.membership}>
-            <div className={`${style.container} ${style.membership__container}`}>
+            <div className={`container ${style.membership__container}`}>
                 <div className={style.membership__text}>
                     <h1 className={style.title}>{t('base.page')}</h1>
                     <p className={style.paragraph}>{t('membership.membership')}</p>
