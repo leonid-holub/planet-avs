@@ -9,15 +9,10 @@ import '@szhsin/react-menu/dist/transitions/slide.css';
 import style from './AppBar.module.scss';
 import { LanguagesSwitcher } from "../LanguageSwitcher/LanguageSwitcher";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
+import HoverMenuItem from "../HoverMenuItem/HoverMenuItem";
 
 const AppBar = () => {
     const [bmIsOpen, setBmIsOpen] = useState(false);
-    const ref = useRef(null);
-    // const ref2 = useRef(null);
-    const [menuState, toggle] = useMenuState({ transition: true });
-    // const [menuState2, toggle2] = useMenuState({ transition: true });
-    const { anchorProps, hoverProps } = useHover(menuState.state, toggle);
-    // const { anchorProps2, hoverProps2 } = useHover(menuState2.state, toggle2);
     const { t } = useTranslation();
     const isDesktop = useMediaQuery({ minWidth: 1280 });
 
@@ -46,26 +41,15 @@ const AppBar = () => {
                             <li className={style.item}>
                                 <NavLink className={style.link} to="insurance"><p className={style.paragraph}><Trans>{t('nav.insurance')}</Trans></p></NavLink>
                             </li>
-                            <li className={style.item} ref={ref} {...anchorProps}>
-                                <NavLink className={style.link} to="studying"><p className={style.paragraph}><Trans>{t('nav.studying')}</Trans></p></NavLink> 
-                                <ControlledMenu
-                                    {...hoverProps}
-                                    {...menuState}
-                                    anchorRef={ref}
-                                    arrow={"arrow"}
-                                    onClose={() => toggle(false)}>
-                                    <MenuItem>{t('studying.bridle')}</MenuItem>
-                                    <MenuItem>{t('studying.grooming')}</MenuItem>
-                                    <MenuItem>{t('studying.laboratory_case')}</MenuItem>
-                                    <MenuItem>{t('studying.animal_care')}</MenuItem>
-                                    <MenuItem>{t('studying.diet')}</MenuItem>
-                                </ControlledMenu>
+                            <li className={style.item} >
+                                <HoverMenuItem linkStyle={style.link} paragraphStyle={style.paragraph} label={'studying'} array={['bridle', 'grooming', 'laboratory_case', 'animal_care', 'diet']}/>
                             </li>
                             <li className={style.item}>
                                 <NavLink className={style.link} to="internship"><p className={style.paragraph}>{t('nav.internship')}</p></NavLink>
                             </li>
                             <li className={style.item} >
-                            <NavLink className={style.link} to="services"><p className={style.paragraph}><Trans>{t('nav.services')}</Trans></p></NavLink>
+                            {/* <NavLink className={style.link} to="services"><p className={style.paragraph}><Trans>{t('nav.services')}</Trans></p></NavLink> */}
+                            <HoverMenuItem linkStyle={style.link} paragraphStyle={style.paragraph} label={'services'} array={['surgery', 'therapy', 'laboratory_research', 'vaccinations', 'ophthalmology', 'obstetrics', 'x_ray', 'bridle']}/>
                             {/* <ControlledMenu
                                     {...hoverProps2}
                                     {...menuState2}
