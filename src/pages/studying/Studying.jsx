@@ -18,5 +18,4 @@ const Studying = () => {
         </section>
     )
 };
-
 export default Studying;

@@ -22,7 +22,7 @@ const HoverMenuItem = ({label, array, linkStyle, paragraphStyle}) => {
           anchorRef={ref}
           arrow={true}
           onClose={() => toggle(false)}
-        >{array.map((item) => <MenuItem key={item}>{t(`${label}.${item}`)}</MenuItem>)}
+        >{array.map((item) => <MenuItem className={paragraphStyle} key={item}>{t(`${label}.${item}`)}</MenuItem>)}
         </ControlledMenu>
       </>
     );
