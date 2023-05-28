@@ -11,38 +11,8 @@ const Home = () => {
             <div className={`container ${style.hero__container}`}>
                 <div className={style.hero__text}>
                     <h1 className={style.title}>PLANET.AVS</h1>
-                    <p className={style.paragraph}>{t('home.avs')}</p>
                 </div>
-                <div className={style.hero__wrapper}>
-                    <img className={style.hero__img} src="images/logo/horse-3.jpg" alt="paint horse" />
-                </div>
-            </div>
-            <div className={`container ${style.hero__container}`}>
-                <div className={style.hero__text}>
-                    <h1 className={style.title}>PLANET.AVS</h1>
-                    <p className={style.paragraph}>{t('home.avs')}</p>
-                </div>
-                <div className={style.hero__wrapper}>
-                    <img className={style.hero__img} src="images/logo/horse-3.jpg" alt="paint horse" />
-                </div>
-            </div>
-            <div className={`container ${style.hero__container}`}>
-                <div className={style.hero__text}>
-                    <h1 className={style.title}>PLANET.AVS</h1>
-                    <p className={style.paragraph}>{t('home.avs')}</p>
-                </div>
-                <div className={style.hero__wrapper}>
-                    <img className={style.hero__img} src="images/logo/horse-3.jpg" alt="paint horse" />
-                </div>
-            </div>
-            <div className={`container ${style.hero__container}`}>
-                <div className={style.hero__text}>
-                    <h1 className={style.title}>PLANET.AVS</h1>
-                    <p className={style.paragraph}>{t('home.avs')}</p>
-                </div>
-                <div className={style.hero__wrapper}>
-                    <img className={style.hero__img} src="images/logo/horse-3.jpg" alt="paint horse" />
-                </div>
+                <img className={style.img} src="/images/dog-1.jpg" alt="Dog"/>
             </div>
         </section>
     )
