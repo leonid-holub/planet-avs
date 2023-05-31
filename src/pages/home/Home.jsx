@@ -10,6 +10,7 @@ const Home = () => {
         <><section className={style.hero}>
             <div className={`container ${style.hero__container}`}>
                 <div className={style.hero__text}>
+					<p className={style.hero__paragraph}><span className={style['logo__first-part']}>Planet.</span>AVS</p>
                     <h1 className={style.hero__title}>Громадська організація<br/>"Ассоціяція ветеринарних спеціалістів коледжів України"</h1>
                 </div>
             </div>
