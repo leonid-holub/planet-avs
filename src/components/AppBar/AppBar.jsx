@@ -31,34 +31,38 @@ const AppBar = () => {
                     
                     {isDesktop ? <div className={style.navigation__wrapper}>
                     <nav className={style.nav}>
-                        <ul className={style["list-top"]}>
+                        <ul className={style.list}>
                             <li className={style.item}>
                                 <NavLink className={style.link} to="history"><p className={style.paragraph}><Trans>{t('nav.history')}</Trans></p></NavLink>
                             </li>
                             <li className={style.item}>
-                                <NavLink className={style.link} to="insurance"><p className={style.paragraph}><Trans>{t('nav.insurance')}</Trans></p></NavLink>
-                            </li>
-                            <li className={style.item}>
-                                <NavLink className={style.link} to="internship"><p className={style.paragraph}>{t('nav.internship')}</p></NavLink>
-                            </li>
-                            <li className={style.item}>
-                                <NavLink className={style.link} to="articles"><p className={style.paragraph}><Trans>{t('nav.articles')}</Trans></p></NavLink>
+                                <NavLink className={style.link} to="membership"><p className={style.paragraph}>{t('nav.membership')}</p></NavLink>
                             </li>
                         </ul>    
-                        <ul className={style["list-bottom"]}>
+                        <ul className={style.list}>
                             <li className={style.item}>
-                                <NavLink className={style.link} to="membership"><p className={style.paragraph}>{t('nav.membership')}</p></NavLink>
+                                <NavLink className={style.link} to="insurance"><p className={style.paragraph}><Trans>{t('nav.insurance')}</Trans></p></NavLink>
                             </li>
                             <li className={style.item} >
                                 <HoverMenuItem linkStyle={style.link} paragraphStyle={style.paragraph} direction={"bottom"} label={'studying'} array={['bridle', 'grooming', 'laboratory_case', 'animal_care', 'diet']}/>
                             </li>
+                        </ul>    
+                        <ul className={style.list}>
+                            <li className={style.item}>
+                                <NavLink className={style.link} to="internship"><p className={style.paragraph}><Trans>{t('nav.internship')}</Trans></p></NavLink>
+                            </li>
                             <li className={style.item} >
                             <HoverMenuItem linkStyle={style.link} paragraphStyle={style.paragraph} direction={"bottom"} label={'services'} array={['surgery', 'therapy', 'laboratory_research', 'vaccinations', 'ophthalmology', 'obstetrics', 'x_ray', 'bridle']}/>
+                            </li>
+                        </ul>
+                        <ul className={style.list}>
+                            <li className={style.item}>
+                                <NavLink className={style.link} to="articles"><p className={style.paragraph}><Trans>{t('nav.articles')}</Trans></p></NavLink>
                             </li>
                             <li className={style.item}>
                                 <NavLink className={style.link} to="events"><p className={style.paragraph}><Trans>{t('nav.events')}</Trans></p></NavLink>
                             </li>
-                        </ul>    
+                        </ul>  
                     </nav> </div>:  ""}
                     {isDesktop ? <LanguagesSwitcher /> : ''}
                     {isDesktop ? '' : <div className={style.burger__wrapper}> <BurgerMenu.MenuButton toggleBmIsOpen={toggleBmIsOpen}  bmIsOpen={bmIsOpen}/> <BurgerMenu.MenuModal bmIsOpen={bmIsOpen} setBmIsOpen={setBmIsOpen}/> </div>}

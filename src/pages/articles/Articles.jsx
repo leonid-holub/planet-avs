@@ -19,7 +19,7 @@ return (
         <video controls width="1200px">
                 <source src="https://civilvoicesmuseum.org/up/103861/dY1ouBRK06XMbj61BZW96PO6HDO1t5VFQJcTSl4P.mp4" type="video/mp4"/>
                 Sorry, your browser doesn't support videos.
-             </video>
+        </video>
     </section>
 );
 };
