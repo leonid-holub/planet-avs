@@ -16,7 +16,7 @@ return (
 					<div className={style.footer__inform}>
 						<div className={`${style.footer__logo} ${style.logo}`}>
                             <pre>
-                                <span className={style["logo__first-part"]}>Planet</span>.AVS
+                                <span className={style["logo__first-part"]}>Planet.</span>AVS
                             </pre>
 						</div>
 						<address className={`${style.footer__adress} ${style.adress}`}>

@@ -7,14 +7,64 @@ const Home = () => {
     const { t } = useTranslation()
 
     return (
-        <section className={style.hero}>
+        <><section className={style.hero}>
             <div className={`container ${style.hero__container}`}>
                 <div className={style.hero__text}>
-                    <h1 className={style.title}>PLANET.AVS</h1>
+                    <h1 className={style.hero__title}>Громадська організація<br/>"Ассоціяція ветеринарних спеціалістів коледжів України"</h1>
                 </div>
-                <img className={style.img} src="/images/dog-1.jpg" alt="Dog"/>
             </div>
         </section>
+        <section className={style.features}>
+			<div className={`container ${style.features__container}`}>
+        <h2 className="visually-hidden">Features</h2>
+        <ul className={style['card-set']} >
+						<li className={style['card-set__item']}>
+							<div className={style.features__thumb}>
+								<svg className={style.features__icon} width="70px" height="70px">
+									<use href="images/icons.svg#antenna"></use>
+								</svg>
+							</div>
+							<h3 className={style.features__title}>УВАГА ДО ДЕТАЛЕЙ</h3>
+							<p className={style.features__paragraph}
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat laudantium aspernatur.</p
+							>
+						</li>
+						<li className={style['card-set__item']}>
+							<div className={style.features__thumb}>
+								<svg className={style.features__icon} width="70px" height="70px">
+									<use href="images/icons.svg#clock"></use>
+								</svg>
+							</div>
+							<h3 className={style.features__title}>ПУНКТУАЛЬНІСТЬ</h3>
+							<p className={style.features__paragraph}
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ea voluptatum facere id, non expedita.</p
+							>
+						</li>
+						<li className={style['card-set__item']}>
+							<div className={style.features__thumb}>
+								<svg className={style.features__icon} width="70px" height="70px">
+									<use href="images/icons.svg#diagram"></use>
+								</svg>
+							</div>
+							<h3 className={style.features__title}>ПЛАНУВАННЯ</h3>
+							<p className={style.features__paragraph}
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laudantium optio blanditiis!</p
+							>
+						</li>
+						<li className={style['card-set__item']}>
+							<div className={style.features__thumb}>
+								<svg className={style.features__icon} width="70px" height="70px">
+									<use href="images/icons.svg#astronaut"></use>
+								</svg>
+							</div>
+							<h3 className={style.features__title}>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+							<p className={style.features__paragraph}
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ea?</p
+							>
+						</li>
+					</ul>
+					</div>
+            </section></>
     )
 };
 

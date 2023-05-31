@@ -7,7 +7,7 @@ import { useTranslation, Trans } from "react-i18next";
 
 import style from './HoverMenuItem.module.scss';
 
-const HoverMenuItem = ({label, array, linkStyle, paragraphStyle}) => {
+const HoverMenuItem = ({label, array, linkStyle, paragraphStyle, direction}) => {
   const ref = useRef(null);
   const [menuState, toggle] = useMenuState({ transition: true });
   const { anchorProps, hoverProps } = useHover(menuState.state, toggle);
@@ -21,6 +21,7 @@ const HoverMenuItem = ({label, array, linkStyle, paragraphStyle}) => {
           {...menuState}
           anchorRef={ref}
           arrow={true}
+          direction={direction}
           onClose={() => toggle(false)}
         >{array.map((item) => <MenuItem className={paragraphStyle} key={item}>{t(`${label}.${item}`)}</MenuItem>)}
         </ControlledMenu>

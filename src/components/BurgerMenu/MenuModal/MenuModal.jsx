@@ -1,14 +1,16 @@
 import { NavLink } from "react-router-dom";
 import { Trans, useTranslation } from "react-i18next";
 
+import HoverMenuItem from "../../HoverMenuItem/HoverMenuItem";
 import style from "./MenuModal.module.scss"
+
 
 const MenuModal = ({bmIsOpen, setBmIsOpen}) => {
 const { t } = useTranslation()
 
     return (
         <>
-        {bmIsOpen ? 
+        {bmIsOpen ?
         <div className={`${style.menu} ${style.active}`} onClick={() => {setBmIsOpen(false)}}>
             <div className={style.blur}/>
                 <div className={style.menu__content} onClick={e => e.stopPropagation()}>
@@ -23,7 +25,7 @@ const { t } = useTranslation()
                             <NavLink className={style.link} to="insurance"><p className={style.paragraph}><Trans>{t('menuModal.insurance')}</Trans></p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="studying"><p className={style.paragraph}><Trans>{t('menuModal.studying')}</Trans></p></NavLink> 
+                            <HoverMenuItem linkStyle={style.link} paragraphStyle={style.paragraph} direction={'left'} label={'studying'} array={['bridle', 'grooming', 'laboratory_case', 'animal_care', 'diet']}/>
                         </li>
                         <li className={style.menu__item}>
                             <NavLink className={style.link} to="internship"><p className={style.paragraph}>{t('menuModal.internship')}</p></NavLink>
@@ -53,7 +55,7 @@ const { t } = useTranslation()
                             <NavLink className={style.link} to="insurance"><p className={style.paragraph}><Trans>{t('menuModal.insurance')}</Trans></p></NavLink>
                         </li>
                         <li className={style.menu__item}>
-                            <NavLink className={style.link} to="studying"><p className={style.paragraph}><Trans>{t('menuModal.studying')}</Trans></p></NavLink> 
+                            <HoverMenuItem linkStyle={style.link} paragraphStyle={style.paragraph} label={'studying'} array={['bridle', 'grooming', 'laboratory_case', 'animal_care', 'diet']}/>
                         </li>
                         <li className={style.menu__item}>
                             <NavLink className={style.link} to="internship"><p className={style.paragraph}>{t('menuModal.internship')}</p></NavLink>

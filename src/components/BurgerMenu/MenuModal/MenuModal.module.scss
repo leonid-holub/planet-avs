@@ -21,11 +21,11 @@
     backdrop-filter: blur(2px);
     position: absolute;
     right: -100%;
-    transform: translateX(+140%);
+    transform: translateX(+170%);
     transition: all 0.2s;
     
     @media screen and (min-width: 768px) {
-        right: 40%;
+        right: 70%;
     }
 }
 
@@ -43,7 +43,7 @@
     transform: translateX(+100%);
 
     @media screen and (min-width: 768px) {
-        width: 40%;
+        width: 70%;
     }
 }
 
