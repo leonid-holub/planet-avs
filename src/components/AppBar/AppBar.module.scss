@@ -3,15 +3,14 @@
 .header {
     position: sticky;
     top: 0;
-    z-index: 10;
-    box-shadow: $secondary-box-shadow;
-    background-color: #ffffff;
-    font-family: $secondary-font;
+    // box-shadow: $secondary-box-shadow;
+    background-color: $main-background-color;
+    border: 5px solid $accent-color;
+    border-radius: 50px;
 }
 
 .header__container {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,8 +25,8 @@
 }
 .nav {
     display: flex;
-    justify-content: space-around;
-    gap: 10px;
+    gap: 40px;
+    padding-left: 40px;
 }
 
 .logo {
@@ -43,7 +42,7 @@
 }
 
 .logo__img {
-    width: 100px;
+    width: 75px;
 }
 
 .burger__wrapper {
@@ -54,7 +53,7 @@
 .list {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .item {
@@ -73,17 +72,36 @@
 }
 
 .paragraph {
+    position: relative;
     text-align: start;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+    // letter-spacing: 0.02em;
     font-style: normal;
     color: $darkgrey-text-color;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
+    transition: all $anim;
+    // text-transform: uppercase;
+}
+
+.paragraph::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    transition: all $anim;
+    border-color: $accent-color;
+   
 }
 
 .paragraph:hover,
 .paragraph:focus {
     color: $accent-color;
+
+    &::after {
+        width: 100%;
+        border: 1px solid $accent-color;
+    }
 }

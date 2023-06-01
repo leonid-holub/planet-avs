@@ -8,11 +8,11 @@ return (
     <section className={style.history}>
         <div className={`container ${style.history__container}`}>
             <div className={style.history__text}>
-                <h1 className={style.title}>{t('base.page')}</h1>
+                {/* <h1 className={style.title}>{t('base.page')}</h1> */}
                 <p className={style.paragraph}>{t('history.history')}</p>
             </div>
             <div className={style.history__wrapper}>
-                <img className={style.history__img} src="images/logo/horse-3.jpg" alt="paint horse" />
+                <img className={style.history__img} src="images/logo/horse-3.jpg" alt="paint horse" width="300px"/>
             </div>
         </div>
     </section>

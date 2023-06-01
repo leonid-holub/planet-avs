@@ -4,9 +4,9 @@
     max-width: 2900px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.5)), url(/public/images/home/hero/paw-1.jpeg) ;
+    background-image: linear-gradient(rgba(56, 71, 61, 0.5), rgba(56, 71, 61, 0.3)), url(/public/images/home/hero/paw-1.jpeg) ;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left bottom;
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -19,39 +19,36 @@
   
   @media screen and (min-width: 1280px) {
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
   }
 }
 
 .hero__text{
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 600px;
 }
 
 .hero__title {
+    padding-left: 130px;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
     color: $secondary-text-color;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
+    line-height: 1.4;
 
     @media screen and (min-width: 768px) {
         font-size: 30px;
     }
     
     @media screen and (min-width: 1280px) {
-        font-size: 40px;
+        font-size: 28px;
     }
 }
 
 .hero__paragraph {
+  padding-left: 100px;
   font-size: 22px;
   font-weight: 700;
   color: $secondary-text-color;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
@@ -59,17 +56,17 @@
   }
   
   @media screen and (min-width: 1280px) {
-      font-size: 40px;
+      font-size: 80px;
   }
 }
 
 .logo__first-part {
-  color: $accent-color;
+  color: $logo-accent-color;
 }
 
 .features {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .card-set {
