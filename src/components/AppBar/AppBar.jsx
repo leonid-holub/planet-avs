@@ -1,7 +1,7 @@
 import { NavLink, Link } from "react-router-dom";
 import { useTranslation, Trans } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/slide.css';
 
@@ -18,6 +18,47 @@ const AppBar = () => {
     const toggleBmIsOpen = () => {
         setBmIsOpen(!bmIsOpen);
     };
+
+// Запускаем функцию при прокрутке страницы
+// window.addEventListener('scroll', function() {
+//   Visible (element);
+// });
+    useEffect(()=> {
+        const element = document.querySelector('footer');
+
+const Visible = function (target) {
+  // Все позиции элемента
+  const targetPosition = {
+      top: window.pageYOffset + target.getBoundingClientRect().top,
+      bottom: window.pageYOffset + target.getBoundingClientRect().bottom
+    },
+    // Получаем позиции окна
+    windowPosition = {
+      top: window.pageYOffset,
+      bottom: window.pageYOffset + document.documentElement.clientHeight
+    };
+
+  if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+    targetPosition.top < windowPosition.bottom) // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден сниз
+     {
+    // Если элемент полностью видно, то запускаем следующий код
+    console.clear();
+    console.log('Вы видите элемент :)');
+  } else {
+    // Если элемент не видно, то запускаем этот код
+    element.classList.add('invisible');
+    console.log('invisible');
+  };
+};
+
+    window.addEventListener('scroll', function() {
+        Visible (element);
+    });
+
+        Visible (element);
+})
+
+
 
     return (
         <header className={style.header}>
