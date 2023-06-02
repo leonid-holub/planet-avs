@@ -22,15 +22,18 @@ return (
 						<address className={`${style.footer__adress} ${style.adress}`}>
 							<ul className={style.list}>
 								<li className={style.footer__item}>
-									<a className={`${style.link} ${style["address-link"]}`} href="https://goo.gl/maps/J25wrrEzBbZf2wvA6" target="_blank" rel="nofollow noopener noreferrer">
-									{t('footer.location')}
+									<a className={`${style.link} ${style["address-link"]}`} href="https://goo.gl/maps/WFAFR6ygAYtcZq3A8" target="_blank" rel="nofollow noopener noreferrer">
+									<Trans>{t('footer.location')}</Trans>
                                     </a>
 								</li>
 								<li className={style.footer__item}>
-									<a className={`${style.link} ${style["footer__contact-link"]}`} href="mailto:info@devstudio.com">planet.avs@mail.com</a>
+									<a className={`${style.link} ${style["footer__contact-link"]}`} href="mailto:vethouse.avs@ukr.net">vethouse.avs@ukr.net</a>
 								</li>
 								<li className={style.footer__item}>
-									<a className={`${style.link} ${style["footer__contact-link"]}`} href="tel:+380961111111">+38 095 111 11 11</a>
+									<a className={`${style.link} ${style["footer__contact-link"]}`} href="tel:+380961111111">+38 098 546 98 76</a>
+								</li>
+								<li className={style.footer__item}>
+									<a className={`${style.link} ${style["footer__contact-link"]}`} href="tel:+380961111111">+38 050 215 10 47</a>
 								</li>
 							</ul>
 						</address>

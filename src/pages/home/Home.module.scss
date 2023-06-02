@@ -28,31 +28,36 @@
 }
 
 .hero__title {
-    padding-left: 130px;
+  padding-left: 20px;
     font-size: 22px;
     font-weight: 400;
     color: $secondary-text-color;
     line-height: 1.4;
+    text-align: center;
 
     @media screen and (min-width: 768px) {
-        font-size: 30px;
+        font-size: 28px;
+        padding-left: 80px;  
+        text-align: left;
     }
     
     @media screen and (min-width: 1280px) {
         font-size: 28px;
+        padding-left: 130px;
     }
 }
 
 .hero__paragraph {
-  padding-left: 100px;
-  font-size: 22px;
+  font-size: 35px;
   font-weight: 700;
   color: $secondary-text-color;
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
-      font-size: 30px;
+      font-size: 50px;
+      padding-left: 50px;
+      text-align: left;
   }
   
   @media screen and (min-width: 1280px) {
@@ -81,7 +86,7 @@
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 30px * (2 - 1)) / 2);
       }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         flex-basis: calc((100% - 30px * (4 - 1)) / 4);
         }
   }
@@ -101,7 +106,7 @@
       max-width: 354px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     .features__thumb {
       max-width: 270px;
     }

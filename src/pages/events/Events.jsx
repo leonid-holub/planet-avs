@@ -1,19 +1,21 @@
 import style from "./Events.module.scss";
 import { useTranslation } from "react-i18next";
+import PageInfo from "../../components/PageInfo/PageInfo";
 
 const Events = () => {
     const { t } = useTranslation();
 
     return (
         <section className={style.events}>
+            <PageInfo>{t('events.events')}</PageInfo>
             <div className={`container ${style.events__container}`}>
-                <div className={style.events__text}>
-                    <h1 className={style.title}>{t('base.page')}</h1>
-                    <p className={style.paragraph}>{t('events.events')}</p>
-                </div>
-                <div className={style.events__wrapper}>
-                    <img className={style.events__img} src="images/logo/horse-3.jpg" alt="paint horse" />
-                </div>
+                <article className={style.article}>
+                    <img className={style.img} src="/public/images/events/dog/dog-collage.jpg" alt="collage with photo of cured dog" width="600px"></img>
+                    <div className={style.text}>
+                        <h3 className={style.title}>Відновлення зору службовій собаці</h3>
+                        <p className={style.paragraph}>Робота на кінологічному центрі Головного управління Національної поліції Київщини</p>
+                    </div>
+                </article>
             </div>
         </section>
     )

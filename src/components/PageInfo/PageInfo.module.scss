@@ -1,0 +1,44 @@
+@import "/src/scss/variables.scss";
+
+
+
+.page-info {
+    background-color: rgb(216, 214, 215);
+}
+
+.page-info__container {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+}
+
+
+
+.page-info__title {
+    font-size: 20px;
+    font-weight: 300;
+    color: $darkgrey-text-color;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        font-size: 35px;
+    }
+
+    @media screen and (min-width: 1280px) {
+            font-size: 50px;
+        }
+}
+
+.page-info__img {
+    width: 150px;
+
+
+    @media screen and (min-width: 768px) {
+        width: 250px;
+    }
+
+    @media screen and (min-width: 1280px) {
+            font-size: 300px;
+        }
+}
