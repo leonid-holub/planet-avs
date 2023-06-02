@@ -10,7 +10,7 @@ const Events = () => {
             <PageInfo>{t('events.events')}</PageInfo>
             <div className={`container ${style.events__container}`}>
                 <article className={style.article}>
-                    <img className={style.img} src="/public/images/events/dog/dog-collage.jpg" alt="collage with photo of cured dog" width="600px"></img>
+                    <img className={style.img} src="images/events/dog/dog-collage.jpg" alt="collage with photo of cured dog" width="600px"></img>
                     <div className={style.text}>
                         <h3 className={style.title}>Відновлення зору службовій собаці</h3>
                         <p className={style.paragraph}>Робота на кінологічному центрі Головного управління Національної поліції Київщини</p>
