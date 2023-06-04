@@ -9,7 +9,7 @@ return (
 		<div className={`${style.footer__container} container`}>
 			<div className={style.logo}>
                 <Link to="/">
-                    <img className={style.logo__img} src="images/logo/photo_2023-05-17_17-39-46-fotor-bg-remove.png" alt="horse"/>                   
+                    <img className={style.logo__img} src="/images/logo/photo_2023-05-17_17-39-46-fotor-bg-remove.png" alt="horse"/>                   
                 </Link>
             </div>
 				<div className={style['footer__container--left']}>
@@ -50,7 +50,7 @@ return (
 									aria-label="Instagram"
 								>
 									<svg className={style["footer-socials__icon"]} width="20px" height="20px">
-										<use href="images/icons.svg#instagram"></use>
+										<use href="/images/icons.svg#instagram"></use>
 									</svg>
 								</a>
 							</li>
@@ -63,7 +63,7 @@ return (
 									aria-label="Twitter"
 								>
 									<svg className={style["footer-socials__icon"]} width="20px" height="20px">
-										<use href="images/icons.svg#twitter"></use>
+										<use href="/images/icons.svg#twitter"></use>
 									</svg>
 								</a>
 							</li>
@@ -76,7 +76,7 @@ return (
 									aria-label="Facebook"
 								>
 									<svg className={style["footer-socials__icon"]} width="20px" height="20px">
-										<use href="images/icons.svg#facebook"></use>
+										<use href="/images/icons.svg#facebook"></use>
 									</svg>
 								</a>
 							</li>
@@ -89,7 +89,7 @@ return (
 									aria-label="LinkedIn"
 								>
 									<svg className={style["footer-socials__icon"]} width="20px" height="20px">
-										<use href="images/icons.svg#linkedin"></use>
+										<use href="/images/icons.svg#linkedin"></use>
 									</svg>
 								</a>
 							</li>

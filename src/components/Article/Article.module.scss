@@ -1,0 +1,45 @@
+@import "/src/scss/variables.scss";
+
+.article {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    gap: 10px;
+    color: $main-text-color;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid $item-border-color;
+    border-radius: 15px;
+    padding: 15px;
+    transition: box-shadow $anim;
+
+    &:hover {
+        box-shadow: $main-box-shadow;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 585px;
+        height: 465px;
+    }
+}
+
+.picture {
+    border-radius: 15px;
+ 
+    @media screen and (min-width: 1280px) {
+            height: 310px;
+        }
+}
+
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    color: $accent-color;
+    text-align: center;
+}
+
+.paragraph {
+    font-weight: 500;
+    text-align: center;
+}

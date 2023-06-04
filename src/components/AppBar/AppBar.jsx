@@ -61,7 +61,7 @@ const AppBar = () => {
                 <div  className={`${style.header__container} container`}>
                         <div className={style.logo}>
                             <Link to="/">
-                                <img className={style.logo__img} src="images/logo/photo_2023-05-17_17-39-46-fotor-bg-remove.png" alt="horse"/>                   
+                                <img className={style.logo__img} src="/images/logo/photo_2023-05-17_17-39-46-fotor-bg-remove.png" alt="horse"/>                   
                             </Link>
                         </div>
                         {isDesktop ? '' : <LanguagesSwitcher />}
