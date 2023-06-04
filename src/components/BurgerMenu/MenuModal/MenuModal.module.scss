@@ -6,9 +6,11 @@
     right: 0;
     width: 100vw;
     height: calc(100vh - 97px);
+    pointer-events: none;
 }
 
 .menu.active {
+    pointer-events: auto;
     .blur,
     .menu__content {
         transform: translateX(0);
