@@ -18,7 +18,7 @@ const Home = () => {
         <section className={style.features}>
 			<div className={`container ${style.features__container}`}>
         <h2 className="visually-hidden">Features</h2>
-        <ul className={style['card-set']} >
+        {/* <ul className={style['card-set']} >
 						<li className={style['card-set__item']}>
 							<div className={style.features__thumb}>
 								<svg className={style.features__icon} width="70px" height="70px">
@@ -26,9 +26,9 @@ const Home = () => {
 								</svg>
 							</div>
 							<h3 className={style.features__title}>УВАГА ДО ДЕТАЛЕЙ</h3>
-							{/* <p className={style.features__paragraph}
+							<p className={style.features__paragraph}
 								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat laudantium aspernatur.</p
-							> */}
+							>
 						</li>
 						<li className={style['card-set__item']}>
 							<div className={style.features__thumb}>
@@ -37,9 +37,9 @@ const Home = () => {
 								</svg>
 							</div>
 							<h3 className={style.features__title}>ПУНКТУАЛЬНІСТЬ</h3>
-							{/* <p className={style.features__paragraph}
+							<p className={style.features__paragraph}
 								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ea voluptatum facere id, non expedita.</p
-							> */}
+							>
 						</li>
 						<li className={style['card-set__item']}>
 							<div className={style.features__thumb}>
@@ -48,8 +48,8 @@ const Home = () => {
 								</svg>
 							</div>
 							<h3 className={style.features__title}>ПРОФЕСІОНАЛІЗМ</h3>
-							{/* <p className={style.features__paragraph}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-							laudantium optio blanditiis!</p> */}
+							<p className={style.features__paragraph}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+							laudantium optio blanditiis!</p>
 						</li>
 						<li className={style['card-set__item']}>
 							<div className={style.features__thumb}>
@@ -58,11 +58,11 @@ const Home = () => {
 								</svg>
 							</div>
 							<h3 className={style.features__title}>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-							{/* <p className={style.features__paragraph}
+							<p className={style.features__paragraph}
 								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ea?</p
-							> */}
+							>
 						</li>
-					</ul>
+				</ul> */}
 					</div>
             </section></>
     )

@@ -1,6 +1,6 @@
 import { GB, UA } from 'country-flag-icons/react/3x2';
 import { useTranslation } from 'react-i18next';
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import {setLanguage} from '../../redux/language/language-slice';
 import { MenuItem, Menu, MenuButton } from '@szhsin/react-menu';
@@ -11,7 +11,7 @@ import style from "./LanguageSwitcher.module.scss";
 
 
 export const LanguagesSwitcher = () => {
-    const [lng, setLng] = useState('');
+    const [lng, setLng] = useState('ua');
     const dispatch = useDispatch();
     const { i18n } = useTranslation();
  

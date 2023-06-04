@@ -19,7 +19,7 @@ return (
                                 <span className={style["logo__first-part"]}>Planet.</span>AVS
                             </pre>
 						</div>
-						<address className={`${style.footer__adress} ${style.adress}`}>
+						<address className={`${style.footer__address} ${style.address}`}>
 							<ul className={style.list}>
 								<li className={style.footer__item}>
 									<a className={`${style.link} ${style["address-link"]}`} href="https://goo.gl/maps/WFAFR6ygAYtcZq3A8" target="_blank" rel="nofollow noopener noreferrer">

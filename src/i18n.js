@@ -8,7 +8,7 @@ import translationUA from '../public/locales/ua/translationUA';
 
 
 i18n.use(LanguageDetector).use(initReactI18next).init({
-    fallbackLng: 'en',
+    fallbackLng: 'ua',
     resources: {
         en: {
             translation: translationEN,

@@ -28,8 +28,8 @@ return (
                 <h4 className={style.author}>Thiernothilfe</h4>
                 <h3 className={style.title}>Thiernothilfe Ukraine e.V.</h3>
                 <p className={style.paragraph}>Міссія Миколаїв</p>
-                <video controls width="100%" poster="/public/images/posters/thiernothilfe.jpg">
-                    <source src="/public/videos/3 серія фінал.mp4" type="video/mp4"/>
+                <video controls width="100%" poster="/images/posters/thiernothilfe.jpg">
+                    <source src="/videos/3 серія фінал.mp4" type="video/mp4"/>
                     Sorry, your browser doesn't support videos.
                 </video>
             </article>
@@ -37,26 +37,24 @@ return (
                 <h4 className={style.author}>PLANET AVS & CO</h4>
                 <h3 className={style.title}>Робота з кіньми</h3>
                 <p className={style.paragraph}></p>
-                <video controls width="70%">
-                    <source src="/public/videos/VID-20220624-WA0004.mp4" type="video/mp4"/>
-                    Sorry, your browser doesn't support videos.
+                <video controls width="100%">
+                    <source src="/videos/VID-20220624-WA0004.mp4" type="video/mp4"/>
                 </video>
             </article>
             <article className={style.article}>
                 <h4 className={style.author}>PLANET AVS & CO</h4>
                 <h3 className={style.title}>Робота з кіньми</h3>
                 <p className={style.paragraph}></p>
-                <video controls width="100%" poster="/public/images/posters/horses.jpg">
-                    <source src="/public/videos/КОНІ.mp4" type="video/mp4"/>
-                    Sorry, your browser doesn't support videos.
+                <video controls width="100%" poster="/images/posters/horses.jpg" >
+                    <source src="/videos/КОНІ.mp4" type="video/mp4"/>
                 </video>
             </article>
             <article className={style.article}>
                 <h4 className={style.author}>PLANET AVS & CO</h4>
                 <h3 className={style.title}>Ветеринатори</h3>
                 <p className={style.paragraph}></p>
-                <video controls width="100%" poster="/public/images/posters/veterenatory.jpg">
-                    <source src="/public/videos/3 серія фінал.mp4" type="video/mp4"/>
+                <video controls width="100%" poster="/images/posters/veterenatory.jpg">
+                    <source src="/videos/3 серія фінал.mp4" type="video/mp4"/>
                     Sorry, your browser doesn't support videos.
                 </video>
             </article>
