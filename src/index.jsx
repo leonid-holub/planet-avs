@@ -11,7 +11,7 @@ import i18n from './i18n.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/planet-avs/'>
       <Provider store={store}>
         <AppBar/>
           <App />
