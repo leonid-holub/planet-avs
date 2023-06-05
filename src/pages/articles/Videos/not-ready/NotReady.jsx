@@ -8,7 +8,7 @@ const NotReady = () => {
 return (
     <section className={style.section}>
         <PageInfo>{t('articles.articles')}</PageInfo>
-        <div className={"container"}>
+        <div className={`container ${style.video__container}`}>
         <article className={style.article}>
                 <h4 className={style.author}>Олександр Шупик</h4>
                 <h3 className={style.title}>&quot;Ніхто не був готовий!&quot;</h3>

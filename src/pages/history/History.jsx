@@ -34,8 +34,7 @@ return (
                     </li>
                     <li className={style.history__item}>
                         <h3 className={style.title}>Засновники</h3>
-                        <p className={style.paragraph}>Лазаренко Павло Валентинович</p>
-                        <p className={style.paragraph}>Шупик Олександр Васильович</p>
+                        <p className={style.paragraph}>Лазаренко Павло Валентинович <br/>Шупик Олександр Васильович</p>
                     </li>
                 </ul>
             </div>

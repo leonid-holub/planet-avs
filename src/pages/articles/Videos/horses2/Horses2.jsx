@@ -8,7 +8,7 @@ const Horses2 = () => {
 return (
     <section className={style.section}>
         <PageInfo>{t('articles.articles')}</PageInfo>
-        <div className={"container"}>
+        <div className={`container ${style.video__container}`}>
             <article className={style.article}>
                 <h4 className={style.author}>PLANET AVS & CO</h4>
                 <h3 className={style.title}>Робота з кіньми</h3>

@@ -1,7 +1,7 @@
 @import "/src/scss/variables.scss";
 
 .header {
-    background-color: $accent-color;
+    // background-color: $accent-color;
     height: 89px;
 }
 
@@ -10,7 +10,7 @@
     top: 0;
     z-index: 100;
     border: 3px solid $accent-color;
-    border-radius: 50px;
+    border-radius: 15px;
     background-color: $main-background-color;
     transition: all linear;
     transition-duration: 1s;
@@ -22,7 +22,7 @@
     top: 0;
     z-index: 100;
     border: 3px solid $accent-color;
-    border-radius: 15px;
+    border-radius: 50px;
     background-color: $main-background-color;
     opacity: 98%;
     width: 100%;

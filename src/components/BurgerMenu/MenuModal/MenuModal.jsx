@@ -18,10 +18,10 @@ const { t } = useTranslation()
                         <li className={style.menu__item}>
                             <NavLink className={style.link} to="history"><p className={style.paragraph}><Trans>{t('menuModal.history')}</Trans></p></NavLink>
                         </li>
-                        {/* <li className={style.menu__item}>
+                        <li className={style.menu__item}>
                             <NavLink className={style.link} to="membership"><p className={style.paragraph}>{t('menuModal.membership')}</p></NavLink>
                         </li>
-                        <li className={style.menu__item}>
+                        {/* <li className={style.menu__item}>
                             <NavLink className={style.link} to="insurance"><p className={style.paragraph}><Trans>{t('menuModal.insurance')}</Trans></p></NavLink>
                         </li>
                         <li className={style.menu__item}>

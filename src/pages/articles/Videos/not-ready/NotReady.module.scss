@@ -5,11 +5,9 @@
     min-height: calc(100vh - 267px - 89px) ;
 }
 
-.articles__container {
+.video__container {
     padding-top: 50px;
     padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
 
     @media screen and (min-width: 768px) {
         padding-top: 75px;
@@ -24,7 +22,6 @@
 
 
 .article {
-    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;

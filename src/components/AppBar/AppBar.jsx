@@ -71,9 +71,9 @@ const AppBar = () => {
                                 <li className={style.item}>
                                     <NavLink className={style.link} to="history"><p className={style.paragraph}><Trans>{t('nav.history')}</Trans></p></NavLink>
                                 </li>
-                                {/* <li className={style.item}>
+                                <li className={style.item}>
                                     <NavLink className={style.link} to="membership"><p className={style.paragraph}>{t('nav.membership')}</p></NavLink>
-                                </li> */}
+                                </li>
                             </ul>    
                             <ul className={style.list}>
                                 {/* <li className={style.item}>

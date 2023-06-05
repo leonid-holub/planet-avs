@@ -3,41 +3,58 @@
 
 
 .page-info {
-    background-color: rgb(216, 214, 215);
+    margin-top: 2px;
+    // background-color: rgb(216, 214, 215);
+    background-image: url(/public/images/bg-spots.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(64, 155, 211);
+    // overflow: hidden;
+    // border-radius: 25px;
 }
 
 .page-info__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
 }
 
 
 
 .page-info__title {
     font-size: 20px;
-    font-weight: 300;
-    color: $darkgrey-text-color;
-    text-align: center;
+    font-weight: 700;
+    color: $secondary-text-color;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 1.15;
 
     @media screen and (min-width: 768px) {
         font-size: 35px;
     }
 
     @media screen and (min-width: 1280px) {
-            font-size: 50px;
+
         }
 }
 
 .page-info__img {
     width: 150px;
-
+    display: none;;
 
     @media screen and (min-width: 768px) {
-        width: 250px;
+        width: 200px;
     }
 
     @media screen and (min-width: 1280px) {
-            font-size: 300px;
+        width: 250px;
         }
 }

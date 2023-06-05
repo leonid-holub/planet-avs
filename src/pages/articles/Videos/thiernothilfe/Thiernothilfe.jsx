@@ -8,7 +8,7 @@ const Thiernothilfe = () => {
 return (
     <section className={style.section}>
         <PageInfo>{t('articles.articles')}</PageInfo>
-        <div className={"container"}>
+        <div className={`container ${style.video__container}`}>
         <article className={style.article}>
                 <h4 className={style.author}>Thiernothilfe Ukraine e.V.</h4>
                 <h3 className={style.title}>Міссія Миколаїв</h3>

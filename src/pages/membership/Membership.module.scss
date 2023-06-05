@@ -1,27 +1,90 @@
 @import "/src/scss/variables.scss";
 
 .membership {
-    background-color: rgb(216, 214, 215);
+    min-height: calc(100vh - 267px - 89px);
 }
 
-
 .membership__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
+    padding-top: 50px;
+}
+
+.membership__list {
+    list-style-position: inside;
+    list-style-type: upper-roman;
+}
+
+.membership__item {
+    margin-bottom: 50px;
+    padding: 30px;
+    border: 1px solid $item-border-color;
+    border-radius: 15px;
+    // background-color: rgba(64, 155, 211, 0.1);
+    // overflow: hidden;
 }
 
 .title {
-    font-size: 70px;
-    font-weight: 600;
-    color: $accent-color;
+    font-size: 24px;
+    font-weight: 700;
+    color: $darkgrey-text-color;
+    margin-bottom: 25px;
     text-align: center;
+    text-transform: uppercase;
+
+    // transform: translate(0px , 120%);
+    // opacity: 0;
+    // transition: all 1s ease 0s;
+
+    @media screen and (min-width: 768px) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+            font-size: 35px;
+        }
 }
 
-.paragraph {
-    font-size: 40px;
-    font-weight: 300;
+.item {
+    position: relative;
+    margin-bottom: 5px;
+    margin-left: 25px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -30px;
+        top: 2px;
+        background-image: url(/images/icons/checkmark.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.link:hover {
+    .item__paragraph {
+        color: $accent-color;
+    }
+}
+
+.item__title {
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 500;
     color: $darkgrey-text-color;
-    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+.item__paragraph {
+    color: $darkgrey-text-color;
+    line-height: 1.4;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        }
 }
