@@ -13,7 +13,7 @@ return (
                 <h4 className={style.author}>Thiernothilfe Ukraine e.V.</h4>
                 <h3 className={style.title}>Міссія Миколаїв</h3>
                 <p className={style.paragraph}>Короткометражний документальний фільм</p>
-                <video controls width="100%" poster="/images/posters/thiernothilfe.jpg">
+                <video controls width="100%" poster="images/posters/thiernothilfe.jpg">
                     <source src="/videos/3 серія фінал.mp4" type="video/mp4"/>
                     Sorry, your browser doesn't support videos.
                 </video>

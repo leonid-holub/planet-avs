@@ -13,7 +13,7 @@ return (
                 <h4 className={style.author}>PLANET AVS & CO</h4>
                 <h3 className={style.title}>Робота з кіньми</h3>
                 <p className={style.paragraph}>Відеоблог з робочим викликом</p>
-                <video controls width="100%" poster="/images/posters/horses.jpg" >
+                <video controls width="100%" poster="images/posters/horses.jpg" >
                     <source src="/videos/КОНІ.mp4" type="video/mp4"/>
                 </video>
             </article>
