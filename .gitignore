@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 vite.config.js
 src/index.jsx
+public/videos/3 серія фінал.mp4
+*.mp4
