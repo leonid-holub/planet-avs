@@ -38,13 +38,11 @@ const AppBar = () => {
             if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
                 targetPosition.top < windowPosition.bottom) // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден сниз
                 {
-                    // Если элемент полностью видно, то запускаем следующий код
                     setVisibleHeader(true);
-                    console.log('Вы видите элемент :)');
+
                 } else {
-                    // Если элемент не видно, то запускаем этот код
+
                     setVisibleHeader(false);
-                    console.log('invisible');
                 };
         };
 

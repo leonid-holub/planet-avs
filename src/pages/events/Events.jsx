@@ -165,7 +165,7 @@ const Events = () => {
               { src: "images/events/lyst_958_1280.jpg", width: 960, height: 1280 },
             ]
           },
-        ]} />} type={"Фото"} title={"Собаки для реабілітації"} description={"Рекомендаційний лист щодо подальшого застосування собак у медико-психологічній реабілітації військовослужбовців."}/>
+        ]} />} type={"Фото"} title={"Допомога в реабілітації"} description={"Рекомендаційний лист щодо подальшого застосування собак у медико-психологічній реабілітації військовослужбовців."}/>
         <Article collage={<Collage slides={[
           {
             src: "images/events/bentley_mriia_899_1124.jpg",
@@ -176,7 +176,7 @@ const Events = () => {
               { src: "images/events/bentley_mriia_899_1124.jpg", width: 900, height: 1124 },
             ]
           },
-        ]} />} type={"Фото"} title={"Допомога в реабілітації"} description={"Бентлі у Ірпінському академічному ліцеї «Мрія» у сховищі під час сповіщення про повітряну наьезпеку."}/>
+        ]} />} type={"Фото"} title={"Підтримка"} description={"Бентлі у Ірпінському академічному ліцеї «Мрія» у сховищі під час сповіщення про повітряну небезпеку."}/>
         <Article collage={<Collage slides={[
           {
             src: "images/events/vayda_polia_bentley/vayda_polia_bentley_1_960_960.jpg",

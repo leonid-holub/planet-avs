@@ -41,7 +41,20 @@ return (
 				<div className={style["footer-socials"]}>
 						<h2 className={`${style["footer-socials__title"]} ${style.title}`}>{t('footer.socials')}</h2>
 						<ul className={`${style["footer-socials__list"]} ${style.list}`}>
-							<li className={style["footer-socials__item"]}>
+						<li className={style["footer-socials__item"]}>
+								<a
+									className={`${style["footer-socials__link"]} ${style.link}`}
+									href="https://www.youtube.com/@planetAVSco/featured"
+									target="_blank"
+									rel="nofollow noopener noreferrer"
+									aria-label="Youtube"
+								>
+									<svg className={style["footer-socials__icon"]} width="20px" height="20px">
+										<use href="images/icons.svg#youtube"></use>
+									</svg>
+								</a>
+							</li>
+							{/* <li className={style["footer-socials__item"]}>
 								<a
 									className={`${style["footer-socials__link"]} ${style.link}`}
 									href=""
@@ -53,8 +66,8 @@ return (
 										<use href="images/icons.svg#instagram"></use>
 									</svg>
 								</a>
-							</li>
-							<li className={style["footer-socials__item"]}>
+							</li> */}
+							{/* <li className={style["footer-socials__item"]}>
 								<a
 									className={`${style["footer-socials__link"]} ${style.link}`}
 									href=""
@@ -66,11 +79,11 @@ return (
 										<use href="images/icons.svg#twitter"></use>
 									</svg>
 								</a>
-							</li>
+							</li> */}
 							<li className={style["footer-socials__item"]}>
 								<a
 									className={`${style["footer-socials__link"]} ${style.link}`}
-									href=""
+									href="https://www.facebook.com/bieliaieva.kateryna"
 									target="_blank"
 									rel="nofollow noopener noreferrer"
 									aria-label="Facebook"
@@ -80,7 +93,7 @@ return (
 									</svg>
 								</a>
 							</li>
-							<li className={style["footer-socials__item"]}>
+							{/* <li className={style["footer-socials__item"]}>
 								<a
 									className={`${style["footer-socials__link"]} ${style.link}`}
 									href=""
@@ -92,7 +105,7 @@ return (
 										<use href="images/icons.svg#linkedin"></use>
 									</svg>
 								</a>
-							</li>
+							</li> */}
 						</ul>
 				</div>
 			</div>
