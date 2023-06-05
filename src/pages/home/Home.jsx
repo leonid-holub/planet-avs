@@ -15,9 +15,9 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        <section className={style.features}>
+        {/* <section className={style.features}>
 			<div className={`container ${style.features__container}`}>
-        <h2 className="visually-hidden">Features</h2>
+        <h2 className="visually-hidden">Features</h2> */}
         {/* <ul className={style['card-set']} >
 						<li className={style['card-set__item']}>
 							<div className={style.features__thumb}>
@@ -63,8 +63,9 @@ const Home = () => {
 							>
 						</li>
 				</ul> */}
-					</div>
-            </section></>
+					{/* </div>
+            </section> */}
+			</>
     )
 };
 
