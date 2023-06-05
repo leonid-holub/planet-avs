@@ -16,10 +16,19 @@ const Events = () => {
           {
             src: "/images/events/polia/polia_1024_1280.jpg",
             alt: "image 1",
-            width: 256,
-            height: 320,
+            width: 300,
+            height: 230,
             srcSet: [
               { src: "/images/events/polia/polia_1024_1280.jpg", width: 1024, height: 1280 },
+            ]
+          },
+          {
+            src: "/public/images/events/polia/polia_960_960.jpg",
+            alt: "image 5",
+            width: 420,
+            height: 220,
+            srcSet: [
+              { src: "/public/images/events/polia/polia_960_960.jpg", width: 960, height: 960 },
             ]
           },
           {
@@ -29,15 +38,6 @@ const Events = () => {
             height: 320,
             srcSet: [
               { src: "/images/events/polia/polia_1024_1280_2.jpg", width: 1024, height: 1280 },
-            ]
-          },
-          {
-            src: "/public/images/events/polia/polia_960_960.jpg",
-            alt: "image 5",
-            width: 240,
-            height: 240,
-            srcSet: [
-              { src: "/public/images/events/polia/polia_960_960.jpg", width: 960, height: 960 },
             ]
           },
           {
@@ -181,8 +181,8 @@ const Events = () => {
           {
             src: "/public/images/events/vayda_polia_bentley/vayda_polia_bentley_1_960_960.jpg",
             alt: "image 1",
-            width: 320,
-            height: 320,
+            width: 300,
+            height: 200,
             srcSet: [
               { src: "/public/images/events/vayda_polia_bentley/vayda_polia_bentley_1_960_960.jpg", width: 960, height: 960 },
             ]
@@ -190,8 +190,8 @@ const Events = () => {
           {
             src: "/public/images/events/vayda_polia_bentley/vayda_polia_bentley_2_960_960.jpg",
             alt: "image 2",
-            width: 320,
-            height: 320,
+            width: 300,
+            height: 200,
             srcSet: [
               { src: "/public/images/events/vayda_polia_bentley/vayda_polia_bentley_2_960_960.jpg", width: 960, height: 960 },
             ]
@@ -199,8 +199,8 @@ const Events = () => {
           {
             src: "/public/images/events/vayda_polia_bentley/vayda_polia_bentley_3_960-954.jpg",
             alt: "image 3",
-            width: 320,
-            height: 320,
+            width: 500,
+            height: 200,
             srcSet: [
               { src: "/public/images/events/vayda_polia_bentley/vayda_polia_bentley_3_960-954.jpg", width: 960, height: 960 },
             ]
