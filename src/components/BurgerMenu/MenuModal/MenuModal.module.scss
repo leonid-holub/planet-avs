@@ -2,10 +2,10 @@
 
 .menu {
     position: fixed;
-    top: 97px;
+    top: 89px;
     right: 0;
     width: 100vw;
-    height: calc(100vh - 97px);
+    height: calc(100vh - 89px);
     pointer-events: none;
 }
 
@@ -19,12 +19,12 @@
 
 .blur {
     width: 100vw;
-    height: calc(100vh - 96px);
+    height: calc(100vh - 89px);
     backdrop-filter: blur(2px);
     position: absolute;
     right: -100%;
     transform: translateX(+170%);
-    transition: all 0.2s;
+    transition: all 0.4s;
     
     @media screen and (min-width: 768px) {
         right: 70%;

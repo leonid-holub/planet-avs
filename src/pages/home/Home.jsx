@@ -1,7 +1,7 @@
-import style from "./Home.module.scss";
 import { useTranslation } from "react-i18next";
-
+import Donates from "../../components/Donates/Donates";
 import BurgerMenu from "../../components/BurgerMenu/MenuButton/MenuButton";
+import style from "./Home.module.scss";
 
 const Home = () => {
     const { t } = useTranslation()
@@ -15,6 +15,9 @@ const Home = () => {
                 </div>
             </div>
         </section>
+		<section className={style.donates} >
+			<Donates />
+		</section>
         {/* <section className={style.features}>
 			<div className={`container ${style.features__container}`}>
         <h2 className="visually-hidden">Features</h2> */}

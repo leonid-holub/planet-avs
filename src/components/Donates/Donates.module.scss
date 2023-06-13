@@ -1,0 +1,88 @@
+@import "/src/scss/variables.scss";
+
+
+.donates__container {
+    font-size: 14px;
+    color: $darkgrey-text-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 1280px) {
+            
+        }
+}
+
+.donates__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: $darkgrey-text-color;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+            font-size: 35px;
+        }
+}
+
+.donates__list {
+    display: flex;
+
+}
+
+.donates__item {
+    position: relative;
+    width: 25%;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    &:hover ::after {
+        content: '';
+        position: absolute;
+        bottom: 7.5px;
+        width: 200px;
+        left: calc(50% - 100px);
+        height: 0;
+        border: 1px solid #c5c3c3;
+    }
+}
+
+.currency__list {
+    padding: 30px;
+    border: 1px solid #c5c3c3;
+    border-radius: 15px;
+}
+
+.active {
+    background-color: #c5c3c3;
+}
+
+.uah {
+    border-top-left-radius: 0;
+}
+
+.crypto {
+    border-top-right-radius: 0;
+}
+
+.item__title {
+    text-align: center;
+    padding: 15px;
+}
+
+.method__title {
+    margin-bottom: 10px;
+}
+
+.method__paragraph {
+    margin-bottom: 30px;
+}
