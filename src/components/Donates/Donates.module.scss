@@ -17,9 +17,8 @@
     }
 }
 
-
-
 .donates__container {
+    position: relative;
     font-size: 14px;
     color: $darkgrey-text-color;
     background-color: $main-background-color;
@@ -126,7 +125,6 @@
     margin-bottom: 25px;
 }
 
-
 .active {
     max-height: 2000px;
 }
@@ -187,4 +185,36 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 35px;
+}
+
+.close-button {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid $accent-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: $main-background-color;
+    transition: background-color $anim, box-shadow $anim;
+    
+
+    &:hover {
+        background-color: $accent-color;
+        box-shadow: $main-box-shadow;
+
+        .close-button__icon {
+            fill: $main-background-color;
+        }
+    }
+}
+
+.close-button__icon {
+    fill: #797777;
+    transition: fill $anim;
 }

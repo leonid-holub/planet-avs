@@ -224,6 +224,11 @@ const Donates = ({ active, toggle }) => {
                         </ul>
                     </li>
                 </ul>
+                <button className={style["close-button"]} type='button' onClick={toggle}>
+                    <svg className={style["close-button__icon"]} width="26" height="50">
+                        <use href="images/icons.svg#close-button"/>
+                    </svg>
+                </button>
             </div>
         </div>
     )
