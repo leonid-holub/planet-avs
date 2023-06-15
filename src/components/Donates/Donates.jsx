@@ -52,7 +52,7 @@ const Donates = ({ active, toggle }) => {
                                     <li className={style.method__item}>
                                         <h3 className={style.method__title}>Приват24:</h3>
                                         <div className={style.method__wrapper}>
-                                            <img src="/images/donates/privat24.jpg" alt="QR code for privat24" width="300px"/>
+                                            <img src="images/donates/privat24.jpg" alt="QR code for privat24" width="300px"/>
                                             <a className={style.method__link} href="https://next.privat24.ua/money-transfer/form/%7B%22form%22:%7B%22receiver%22:%7B%22source%22:%22manual%22,%22number%22:%224246001003945387%22%7D,%22amount%22:%220%22,%22currency%22:%22UAH%22%7D%7D" target="_blank" rel="noreferrer noopener">Посилання на Приват24</a>
                                         </div>
                                     </li>
@@ -215,11 +215,11 @@ const Donates = ({ active, toggle }) => {
                         <ul className={`${style["currency__list--crypto"]} ${currency === 'CRYPTO' ? style.active : ''}`} onClick={e => e.stopPropagation()}>
                             <li className={style.currency__item}>
                                 <h3 className={style.item__title}>Ethereum</h3>
-                                <img src="/images/donates/ethereum.jpg" alt="QR code for ethereum Trust Wallet" width="300px"/>
+                                <img src="images/donates/ethereum.jpg" alt="QR code for ethereum Trust Wallet" width="300px"/>
                             </li>
                             <li className={style.currency__item}>
                             <h3 className={style.item__title}>Bitcoin</h3>
-                            <img src="/images/donates/bitcoin.jpg" alt="QR code for bitcoin Trust Wallet" width="300px"/>
+                            <img src="images/donates/bitcoin.jpg" alt="QR code for bitcoin Trust Wallet" width="300px"/>
                             </li>
                         </ul>
                     </li>
