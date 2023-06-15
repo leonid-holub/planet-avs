@@ -1,27 +1,44 @@
 @import "/src/scss/variables.scss";
 
+.donates {
+    display: none;
+
+    &--active {
+        display: block;
+        position: fixed;
+        top: 89px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding-top: 100px;
+        z-index: 100;
+        backdrop-filter: blur(5px);
+        overflow: auto;
+    }
+}
+
+
 
 .donates__container {
     font-size: 14px;
     color: $darkgrey-text-color;
+    background-color: $main-background-color;
+    border: 3px solid $accent-color;
+    border-radius: 25px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 
     @media screen and (min-width: 768px) {
         font-size: 18px;
     }
-
-    @media screen and (min-width: 1280px) {
-            
-        }
 }
 
 .donates__title {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
     color: $darkgrey-text-color;
     margin-bottom: 15px;
     text-align: center;
-    text-transform: uppercase;
-
     @media screen and (min-width: 768px) {
         font-size: 30px;
     }
@@ -33,56 +50,141 @@
 
 .donates__list {
     display: flex;
-
+    flex-direction: column;
+    border: 1px solid $item-border-color;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .donates__item {
-    position: relative;
-    width: 25%;
-    text-align: center;
-    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid $item-border-color;
     cursor: pointer;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    background-color: $main-background-color;
+}
 
-    &:hover ::after {
-        content: '';
-        position: absolute;
-        bottom: 7.5px;
-        width: 200px;
-        left: calc(50% - 100px);
-        height: 0;
-        border: 1px solid #c5c3c3;
+.currency__title {
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    transition: all $anim;
+    display: block;
+    padding: 25px 0;
+    text-transform: uppercase;
+    color: $accent-color;
+
+    @media screen and (min-width: 480px) {
+        &::after {
+            content: '';
+            background: url(images/icons/arrow-right.svg) no-repeat;
+            width: 18px;
+            height: 32px;
+            position: absolute;
+            top: calc(50% - 16px);
+            left: 25px;
+            transform: rotate(90deg);
+            transition: transform $anim;
+        }
+    }
+
+    &:hover {
+        color: $secondary-text-color;
+        background-color: $item-border-color;
+    }
+
+    &--active {
+        color: $accent-color;
+        background-color: #d8d8d8;
+
+        &::after {
+            transform: rotate(270deg);
+        }
     }
 }
 
 .currency__list {
-    padding: 30px;
-    border: 1px solid #c5c3c3;
-    border-radius: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s linear;
+    cursor: auto;
+    padding: 0 25px;
+    flex-wrap: wrap;
+
+    &--crypto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 25px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .5s linear;
+        cursor: auto;
+    }
 }
+.currency__item {
+    margin-bottom: 25px;
+}
+
 
 .active {
-    background-color: #c5c3c3;
-}
-
-.uah {
-    border-top-left-radius: 0;
-}
-
-.crypto {
-    border-top-right-radius: 0;
+    max-height: 2000px;
 }
 
 .item__title {
     text-align: center;
+    text-transform: uppercase;
     padding: 15px;
+    font-size: 16px;
+    margin: 20px 0;
+
+    @media screen and (min-width: 420px) {
+        font-size: 20px;
+    }
+}
+
+.method__list {
+    margin-bottom: 50px;
+}
+
+.method__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 50px;
+    margin-bottom: 35px;
 }
 
 .method__title {
     margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.method__link {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $darkgrey-text-color;
+    margin-bottom: 15px;
+
+    &:hover {
+        color: $accent-color;
+    }
 }
 
 .method__paragraph {
-    margin-bottom: 30px;
+    font-size: 12px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) {
+        font-size: 16px;
+    }
+
+}
+
+.correspondent__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 35px;
 }

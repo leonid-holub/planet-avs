@@ -15,9 +15,7 @@ const Home = () => {
                 </div>
             </div>
         </section>
-		<section className={style.donates} >
-			<Donates />
-		</section>
+		<Donates/>
         {/* <section className={style.features}>
 			<div className={`container ${style.features__container}`}>
         <h2 className="visually-hidden">Features</h2> */}

@@ -16,8 +16,8 @@ const Events = () => {
           {
             src: "images/events/polia/polia_1024_1280.jpg",
             alt: "image 1",
-            width: 300,
-            height: 230,
+            width: 1024,
+            height: 1280,
             srcSet: [
               { src: "images/events/polia/polia_1024_1280.jpg", width: 1024, height: 1280 },
             ]
@@ -25,8 +25,8 @@ const Events = () => {
           {
             src: "images/events/polia/polia_960_960.jpg",
             alt: "image 5",
-            width: 420,
-            height: 220,
+            width: 960,
+            height: 960,
             srcSet: [
               { src: "images/events/polia/polia_960_960.jpg", width: 960, height: 960 },
             ]
@@ -34,8 +34,8 @@ const Events = () => {
           {
             src: "images/events/polia/polia_1024_1280_2.jpg",
             alt: "image 2",
-            width: 256,
-            height: 320,
+            width: 1024,
+            height: 1280,
             srcSet: [
               { src: "images/events/polia/polia_1024_1280_2.jpg", width: 1024, height: 1280 },
             ]
@@ -43,8 +43,8 @@ const Events = () => {
           {
             src: "images/events/polia/polia_1024_1280_3.jpg",
             alt: "image 3",
-            width: 256,
-            height: 320,
+            width: 1024,
+            height: 1280,
             srcSet: [
               { src: "images/events/polia/polia_1024_1280_3.jpg", width: 1024, height: 1280 },
             ]
@@ -52,8 +52,8 @@ const Events = () => {
           {
             src: "images/events/polia/polia_1024_1280_4.jpg",
             alt: "image 4",
-            width: 256,
-            height: 320,
+            width: 1024,
+            height: 1280,
             srcSet: [
               { src: "images/events/polia/polia_1024_1280_4.jpg", width: 1024, height: 1280 },
             ]
@@ -63,8 +63,8 @@ const Events = () => {
           {
             src: "images/events/dog/dog-2.jpg",
             alt: "image 1",
-            width: 240,
-            height: 320,
+            width: 960,
+            height: 1280,
             srcSet: [
               { src: "images/events/dog/dog-2.jpg", width: 960, height: 1280 },
             ]
@@ -72,8 +72,8 @@ const Events = () => {
           {
             src: "images/events/dog/dog-3.jpg",
             alt: "image 2",
-            width: 320,
-            height: 240,
+            width: 960,
+            height: 1280,
             srcSet: [
               { src: "images/events/dog/dog-3.jpg", width: 1280, height: 960 },
             ]
@@ -81,8 +81,8 @@ const Events = () => {
           {
             src: "images/events/dog/dog-4.jpg",
             alt: "image 3",
-            width: 240,
-            height: 320,
+            width: 960,
+            height: 1280,
             srcSet: [
               { src: "images/events/dog/dog-4.jpg", width: 960, height: 1280 },
             ]
@@ -90,8 +90,8 @@ const Events = () => {
           {
             src: "images/events/dog/dog-5.jpg",
             alt: "image 4",
-            width: 240,
-            height: 320,
+            width: 960,
+            height: 1280,
             srcSet: [
               { src: "images/events/dog/dog-5.jpg", width: 960, height: 1280 },
             ]
@@ -99,8 +99,8 @@ const Events = () => {
           {
             src: "images/events/dog/dog-6.jpg",
             alt: "image 5",
-            width: 240,
-            height: 320,
+            width: 960,
+            height: 1280,
             srcSet: [
               { src: "images/events/dog/dog-6.jpg", width: 960, height: 1280 },
             ]
@@ -108,8 +108,8 @@ const Events = () => {
           {
             src: "images/events/dog/dog-7.jpg",
             alt: "image 6",
-            width: 240,
-            height: 320,
+            width: 960,
+            height: 1280,
             srcSet: [
               { src: "images/events/dog/dog-7.jpg", width: 960, height: 1280 },
             ]
@@ -117,8 +117,8 @@ const Events = () => {
           {
             src: "images/events/dog/dog-8.jpg",
             alt: "image 7",
-            width: 240,
-            height: 320,
+            width: 960,
+            height: 1280,
             srcSet: [
               { src: "images/events/dog/dog-8.jpg", width: 960, height: 1280 },
             ]
@@ -126,8 +126,8 @@ const Events = () => {
           {
             src: "images/events/dog/dog-9.jpg",
             alt: "image 4",
-            width: 320,
-            height: 240,
+            width: 1280,
+            height: 960,
             srcSet: [
               { src: "images/events/dog/dog-9.jpg", width: 1280, height: 960 },
             ]
@@ -137,8 +137,8 @@ const Events = () => {
           {
             src: "images/events/poland_960_1280.jpg",
             alt: "image 1",
-            width: 240,
-            height: 320,
+            width: 960,
+            height: 1280,
             srcSet: [
               { src: "images/events/poland_960_1280.jpg", width: 960, height: 1280 },
             ]
@@ -148,8 +148,8 @@ const Events = () => {
           {
             src: "images/events/vayda_bentley_960_960.jpg",
             alt: "image 1",
-            width: 320,
-            height: 320,
+            width: 960,
+            height: 960,
             srcSet: [
               { src: "images/events/vayda_bentley_960_960.jpg", width: 960, height: 960 },
             ]
@@ -159,8 +159,8 @@ const Events = () => {
           {
             src: "images/events/lyst_958_1280.jpg",
             alt: "image 1",
-            width: 320,
-            height: 320,
+            width: 960,
+            height: 1280,
             srcSet: [
               { src: "images/events/lyst_958_1280.jpg", width: 960, height: 1280 },
             ]
@@ -170,8 +170,8 @@ const Events = () => {
           {
             src: "images/events/bentley_mriia_899_1124.jpg",
             alt: "image 1",
-            width: 300,
-            height: 340,
+            width: 900,
+            height: 1124,
             srcSet: [
               { src: "images/events/bentley_mriia_899_1124.jpg", width: 900, height: 1124 },
             ]
@@ -181,8 +181,8 @@ const Events = () => {
           {
             src: "images/events/vayda_polia_bentley/vayda_polia_bentley_1_960_960.jpg",
             alt: "image 1",
-            width: 300,
-            height: 200,
+            width: 960,
+            height: 960,
             srcSet: [
               { src: "images/events/vayda_polia_bentley/vayda_polia_bentley_1_960_960.jpg", width: 960, height: 960 },
             ]
@@ -190,8 +190,8 @@ const Events = () => {
           {
             src: "images/events/vayda_polia_bentley/vayda_polia_bentley_2_960_960.jpg",
             alt: "image 2",
-            width: 300,
-            height: 200,
+            width: 960,
+            height: 960,
             srcSet: [
               { src: "images/events/vayda_polia_bentley/vayda_polia_bentley_2_960_960.jpg", width: 960, height: 960 },
             ]
@@ -199,8 +199,8 @@ const Events = () => {
           {
             src: "images/events/vayda_polia_bentley/vayda_polia_bentley_3_960-954.jpg",
             alt: "image 3",
-            width: 500,
-            height: 200,
+            width: 960,
+            height: 960,
             srcSet: [
               { src: "images/events/vayda_polia_bentley/vayda_polia_bentley_3_960-954.jpg", width: 960, height: 960 },
             ]
@@ -210,8 +210,8 @@ const Events = () => {
           {
             src: "images/events/vayda_polia_1280_1280.jpg",
             alt: "image 1",
-            width: 320,
-            height: 320,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/vayda_polia_1280_1280.jpg", width: 1280, height: 1280 },
             ]
@@ -221,8 +221,8 @@ const Events = () => {
           {
             src: "images/events/laboratory_960_1280.jpg",
             alt: "image 1",
-            width: 240,
-            height: 320,
+            width: 960,
+            height: 1280,
             srcSet: [
               { src: "images/events/laboratory_960_1280.jpg", width: 960, height: 1280 },
             ]
@@ -232,8 +232,8 @@ const Events = () => {
           {
             src: "images/events/vaida_lisova_1280_1280.jpg",
             alt: "image 1",
-            width: 320,
-            height: 320,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/vaida_lisova_1280_1280.jpg", width: 1280, height: 1280 },
             ]
@@ -243,8 +243,8 @@ const Events = () => {
           {
             src: "images/events/v_b_kremen/vaida_bentley_kremen_1280_1280_1.jpg",
             alt: "image 1",
-            width: 400,
-            height: 320,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/v_b_kremen/vaida_bentley_kremen_1280_1280_1.jpg", width: 1280, height: 1280 },
             ]
@@ -252,8 +252,8 @@ const Events = () => {
           {
             src: "images/events/v_b_kremen/vaida_bentley_kremen_1280_1280_2.jpg",
             alt: "image 2",
-            width: 400,
-            height: 320,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/v_b_kremen/vaida_bentley_kremen_1280_1280_2.jpg", width: 1280, height: 1280 },
             ]
@@ -261,8 +261,8 @@ const Events = () => {
           {
             src: "images/events/v_b_kremen/vaida_bentley_kremen_1280_1280_3.jpg",
             alt: "image 3",
-            width: 320,
-            height: 320,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/v_b_kremen/vaida_bentley_kremen_1280_1280_3.jpg", width: 1280, height: 1280 },
             ]
@@ -270,8 +270,8 @@ const Events = () => {
           {
             src: "images/events/v_b_kremen/vaida_bentley_kremen_1280_1280_4.jpg",
             alt: "image 4",
-            width: 320,
-            height: 320,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/v_b_kremen/vaida_bentley_kremen_1280_1280_4.jpg", width: 1280, height: 1280 },
             ]
@@ -279,8 +279,8 @@ const Events = () => {
           {
             src: "images/events/v_b_kremen/vaida_bentley_kremen_1280_1280_5.jpg",
             alt: "image 5",
-            width: 320,
-            height: 320,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/v_b_kremen/vaida_bentley_kremen_1280_1280_5.jpg", width: 1280, height: 1280 },
             ]
@@ -301,8 +301,8 @@ const Events = () => {
           {
             src: "images/events/p_v_namn/polia_vaida_namn_1280_1280_2.jpg",
             alt: "image 2",
-            width: 505,
-            height: 320,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/p_v_namn/polia_vaida_namn_1280_1280_2.jpg", width: 1280, height: 1280 },
             ]
@@ -310,8 +310,8 @@ const Events = () => {
           {
             src: "images/events/p_v_namn/polia_vaida_namn_1280_1280_3.jpg",
             alt: "image 3",
-            width: 505,
-            height: 320,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/p_v_namn/polia_vaida_namn_1280_1280_3.jpg", width: 1280, height: 1280 },
             ]
@@ -319,8 +319,8 @@ const Events = () => {
           {
             src: "images/events/p_v_namn/polia_vaida_namn_1280_1280_1.jpg",
             alt: "image 1",
-            width: 750,
-            height: 320,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/p_v_namn/polia_vaida_namn_1280_1280_1.jpg", width: 1280, height: 1280 },
             ]
@@ -341,8 +341,8 @@ const Events = () => {
           {
             src: "images/events/v_p_b_namn/vauda_polia_bentley_namn_1280_1280_1.jpg",
             alt: "image 1",
-            width: 300,
-            height: 200,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/v_p_b_namn/vauda_polia_bentley_namn_1280_1280_1.jpg", width: 1280, height: 1280 },
             ]
@@ -350,8 +350,8 @@ const Events = () => {
           {
             src: "images/events/v_p_b_namn/vauda_polia_bentley_namn_1280_1280_2.jpg",
             alt: "image 2",
-            width: 300,
-            height: 200,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/v_p_b_namn/vauda_polia_bentley_namn_1280_1280_2.jpg", width: 1280, height: 1280 },
           ]
@@ -359,8 +359,8 @@ const Events = () => {
         {
           src: "images/events/v_p_b_namn/vauda_polia_bentley_namn_1280_1280_3.jpg",
           alt: "image 3",
-          width: 500,
-          height: 200,
+          width: 1280,
+          height: 1280,
           srcSet: [
             { src: "images/events/v_p_b_namn/vauda_polia_bentley_namn_1280_1280_3.jpg", width: 1280, height: 1280 },
         ]
@@ -370,8 +370,8 @@ const Events = () => {
           {
             src: "images/events/v_b_kadec/vaida_bentley_kadec_1280_1280_1.jpg",
             alt: "image 1",
-            width: 290,
-            height: 200,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/v_b_kadec/vaida_bentley_kadec_1280_1280_1.jpg", width: 1280, height: 1280 },
             ]
@@ -379,8 +379,8 @@ const Events = () => {
           {
             src: "images/events/v_b_kadec/vaida_bentley_kadec_1280_1280_2.jpg",
             alt: "image 2",
-            width: 290,
-            height: 200,
+            width: 1280,
+            height: 1280,
             srcSet: [
               { src: "images/events/v_b_kadec/vaida_bentley_kadec_1280_1280_2.jpg", width: 1280, height: 1280 },
           ]
@@ -388,8 +388,8 @@ const Events = () => {
         {
           src: "images/events/v_b_kadec/vaida_bentley_kadec_1280_1280_3.jpg",
           alt: "image 3",
-          width: 500,
-          height: 200,
+          width: 1280,
+          height: 1280,
           srcSet: [
             { src: "images/events/v_b_kadec/vaida_bentley_kadec_1280_1280_3.jpg", width: 1280, height: 1280 },
         ]
@@ -399,8 +399,8 @@ const Events = () => {
           {
             src: "images/events/p_tro/polia_tro_1080_1080_1.jpg",
             alt: "image 1",
-            width: 270,
-            height: 270,
+            width: 1080,
+            height: 1080,
             srcSet: [
               { src: "images/events/p_tro/polia_tro_1080_1080_1.jpg", width: 1080, height: 1080 },
             ]
@@ -408,8 +408,8 @@ const Events = () => {
           {
             src: "images/events/p_tro/polia_tro_1080_1080_2.jpg",
             alt: "image 2",
-            width: 270,
-            height: 270,
+            width: 1080,
+            height: 1080,
             srcSet: [
               { src: "images/events/p_tro/polia_tro_1080_1080_2.jpg", width: 1080, height: 1080 },
           ]

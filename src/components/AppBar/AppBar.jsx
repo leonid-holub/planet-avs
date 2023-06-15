@@ -9,10 +9,12 @@ import style from './AppBar.module.scss';
 import { LanguagesSwitcher } from "../LanguageSwitcher/LanguageSwitcher";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import HoverMenuItem from "../HoverMenuItem/HoverMenuItem";
+import Donates from "../Donates/Donates";
 
 const AppBar = () => {
     const [bmIsOpen, setBmIsOpen] = useState(false);
     const [visibleHeader, setVisibleHeader] = useState();
+    const [activeDonates, setActiveDonates] = useState();
     const { t } = useTranslation();
     const isDesktop = useMediaQuery({ minWidth: 1280 });
 
@@ -20,9 +22,12 @@ const AppBar = () => {
         setBmIsOpen(!bmIsOpen);
     };
 
+    const toggleDonates = () => {
+        setActiveDonates(!activeDonates)
+    }
+
     useEffect(()=> {
         const element = document.querySelector('header');
-
         const Visible = function (target) {
         // Все позиции элемента
             const targetPosition = {
@@ -34,22 +39,17 @@ const AppBar = () => {
             top: window.pageYOffset,
             bottom: window.pageYOffset + document.documentElement.clientHeight
             };
-
             if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
                 targetPosition.top < windowPosition.bottom) // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден сниз
                 {
                     setVisibleHeader(true);
-
                 } else {
-
                     setVisibleHeader(false);
-                };
+                }
         };
-
         window.addEventListener('scroll', function() {
             Visible (element);
         });
-
         Visible (element);
     })
 
@@ -62,6 +62,7 @@ const AppBar = () => {
                                 <img className={style.logo__img} src="images/logo/photo_2023-05-17_17-39-46-fotor-bg-remove.png" alt="horse"/>                   
                             </Link>
                         </div>
+                        <button className={style.button} type="button" onClick={toggleDonates}>Допомогти</button>
                         {isDesktop ? '' : <LanguagesSwitcher />}
                         {isDesktop ? <div className={style.navigation__wrapper}>
                         <nav className={style.nav}>
@@ -102,6 +103,7 @@ const AppBar = () => {
                         {isDesktop ? '' : <div className={style.burger__wrapper}> <BurgerMenu.MenuButton toggleBmIsOpen={toggleBmIsOpen}  bmIsOpen={bmIsOpen}/> <BurgerMenu.MenuModal bmIsOpen={bmIsOpen} setBmIsOpen={setBmIsOpen}/> </div>}
                 </div>
             </div>
+            <Donates active={activeDonates} toggle={toggleDonates}/>             
         </header>
     )
 } ;

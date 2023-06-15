@@ -49,9 +49,7 @@ return (
 									rel="nofollow noopener noreferrer"
 									aria-label="Youtube"
 								>
-									<svg className={style["footer-socials__icon"]} width="20px" height="20px">
-										<use href="images/icons.svg#youtube"></use>
-									</svg>
+									<img src = "images/icons/youtube.svg" alt="My Happy SVG" width="20px" height="20px"/>
 								</a>
 							</li>
 							{/* <li className={style["footer-socials__item"]}>

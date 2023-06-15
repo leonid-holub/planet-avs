@@ -145,11 +145,8 @@
 	}
 }
 
-pre {
-    font-family: inherit;
-}
-
 /* Колір для першої частини лого */
 .logo__first-part {
 	color: $logo-accent-color;
+	font-family: $main-font;
 }
