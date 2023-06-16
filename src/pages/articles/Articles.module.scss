@@ -6,19 +6,28 @@
 }
 
 .articles__container {
-    padding-top: 50px;
+    position: relative;
+    padding-top: 150px;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 200px;
+    }
 
     @media screen and (min-width: 1280px) {
         flex-direction: row;
         flex-wrap: wrap;
+        padding-top: 250px;
         }
 }
 
 .item {
-    display: flex;
-    justify-content: center;
+    flex-basis: 100%;
+    
+    @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 50px) / 2);
+    }
 }

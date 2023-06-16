@@ -5,7 +5,16 @@
 }
 
 .membership__container {
-    padding-top: 50px;
+    padding-top: 150px;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 200px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 250px;
+    }
 }
 
 .membership__list {

@@ -1,5 +1,5 @@
 import style from "./History.module.scss";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import PageInfo from "../../components/PageInfo/PageInfo";
 
 const History = () => {
@@ -7,7 +7,7 @@ const History = () => {
 
 return (
     <section className={style.history}>
-        <PageInfo>{t('history.history')}</PageInfo>
+        <PageInfo url={"images/history/history-short-1.jpg"}><Trans>{t('history.history')}</Trans></PageInfo>
         <div className={`container ${style.history__container}`}>
             <div>
                 <ul className={style.history__list}>

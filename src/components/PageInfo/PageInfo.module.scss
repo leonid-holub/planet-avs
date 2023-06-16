@@ -3,33 +3,59 @@
 
 
 .page-info {
-    margin-top: 2px;
-    // background-color: rgb(216, 214, 215);
+    margin-top: 1px;
+    background-color: rgb(64, 155, 211);
     background-image: url(images/bg-spots.png);
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
-    background-color: rgb(64, 155, 211);
-    // overflow: hidden;
-    // border-radius: 25px;
 }
 
 .page-info__container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-height: 150px;
     padding-top: 50px;
     padding-bottom: 50px;
 
     @media screen and (min-width: 768px) {
         padding-top: 75px;
         padding-bottom: 75px;
+        max-height: 200px;
     }
+
+    @media screen and (min-width: 1280px) {
+        max-height: 300px;
+        }
 }
 
+.page-info__img {
+    display: none;
+    max-width: 250px;
+    border-radius: 15px;
+    margin-top: 130px;
+    box-shadow: $main-box-shadow;
 
+    @media screen and (min-width: 480px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 50px;
+        max-width: 300px;
+        margin-top: 150px;
+    }
+
+    @media screen and (min-width: 1280px) {
+       max-width: 450px;
+        margin-top: 230px;
+        }
+}
 
 .page-info__title {
+    display: block;
     font-size: 20px;
     font-weight: 700;
     color: $secondary-text-color;
@@ -42,19 +68,44 @@
     }
 
     @media screen and (min-width: 1280px) {
-
+        font-size: 40px;
         }
 }
 
-.page-info__img {
-    width: 150px;
-    display: none;;
+.page-info__six-paws {
+    position: absolute;
+    top: 175px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    fill: $accent-color;
+}
 
-    @media screen and (min-width: 768px) {
-        width: 200px;
+.page-info__four-paws {
+    position: absolute;
+    display: none;
+    top: 175px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    fill: $accent-color;
+
+    @media screen and (min-width: 480px) {
+        display: block;
     }
 
-    @media screen and (min-width: 1280px) {
-        width: 250px;
-        }
+
+    @media screen and (min-width: 768px) {
+        top: 250px;
+        left: 100px;
+    }
+}
+
+.page-info__two-paws {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width: 100px;
+    height: 100px;
+    fill: $accent-color;
 }

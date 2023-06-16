@@ -8,7 +8,7 @@ const Membership = () => {
 
     return (
         <section className={style.membership}>
-            <PageInfo>
+            <PageInfo url={"images/membership/membership-short-2.jpg"}>
                 {t('membership.membership')}
             </PageInfo>
             <div className={`container ${style.membership__container}`}>

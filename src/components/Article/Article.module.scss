@@ -3,7 +3,6 @@
 .article {
     display: flex;
     flex-direction: column;
-    flex-basis: auto;
     gap: 10px;
     color: $main-text-color;
     cursor: pointer;
@@ -15,11 +14,6 @@
 
     &:hover {
         box-shadow: $main-box-shadow;
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 585px;
-        height: 465px;
     }
 }
 
@@ -49,7 +43,7 @@
     height: 310px;
     overflow: hidden;
     // display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    // align-items: center;
+    // justify-content: center;
+    // align-content: center;
 }
