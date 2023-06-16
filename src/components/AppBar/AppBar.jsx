@@ -87,7 +87,10 @@ const AppBar = () => {
                                     <NavLink className={style.link} to="internship"><p className={style.paragraph}><Trans>{t('nav.internship')}</Trans></p></NavLink>
                                 </li> */}
                                 <li className={style.item} >
-                                <HoverMenuItem linkStyle={style.link} paragraphStyle={style.paragraph} direction={"bottom"} label={'services'} array={['surgery', 'therapy', 'laboratory_research', 'vaccinations', 'ophthalmology', 'obstetrics', 'x_ray', 'bridle']}/>
+                                {/* <HoverMenuItem linkStyle={style.link} paragraphStyle={style.paragraph} direction={"bottom"} label={'services'} array={['surgery', 'therapy', 'laboratory_research', 'vaccinations', 'ophthalmology', 'obstetrics', 'x_ray', 'bridle']}/> */}
+                                 <li className={style.item}>
+                                    <NavLink className={style.link} to="services"><p className={style.paragraph}><Trans>{t('nav.services')}</Trans></p></NavLink>
+                                </li>
                                 </li>
                             </ul>
                             <ul className={style.list}>

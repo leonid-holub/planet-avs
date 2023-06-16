@@ -29,10 +29,10 @@ const { t } = useTranslation()
                         </li>
                         <li className={style.menu__item}>
                             <NavLink className={style.link} to="internship"><p className={style.paragraph}>{t('menuModal.internship')}</p></NavLink>
-                        </li>
+                        </li> */}
                         <li className={style.menu__item}>
                             <NavLink className={style.link} to="services"><p className={style.paragraph}><Trans>{t('menuModal.services')}</Trans></p></NavLink>
-                        </li> */}
+                        </li>
                         <li className={style.menu__item}>
                             <NavLink className={style.link} to="articles"><p className={style.paragraph}><Trans>{t('menuModal.articles')}</Trans></p></NavLink>
                         </li>

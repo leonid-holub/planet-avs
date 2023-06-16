@@ -11,6 +11,7 @@
     border-radius: 15px;
     padding: 15px;
     transition: box-shadow $anim;
+    height: 100%;
 
     &:hover {
         box-shadow: $main-box-shadow;
@@ -36,6 +37,9 @@
 .paragraph {
     font-weight: 500;
     text-align: center;
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .collage__wrapper {

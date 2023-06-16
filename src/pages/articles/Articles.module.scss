@@ -13,16 +13,37 @@
     flex-direction: column;
     gap: 50px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
         padding-top: 200px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 250px;
     }
 
     @media screen and (min-width: 1280px) {
         flex-direction: row;
         flex-wrap: wrap;
-        padding-top: 250px;
-        }
+     }
 }
+
+
+.articles__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: $darkgrey-text-color;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+            font-size: 35px;
+    }
+}
+
+
 
 .item {
     flex-basis: 100%;

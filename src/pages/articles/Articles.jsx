@@ -11,6 +11,7 @@ return (
     <section className={style.articles}>
        <PageInfo url={"images/articles/articles-short-1.jpg"}>{t('articles.articles')}</PageInfo>
         <div className={`container ${style.articles__container}`}>
+                <h3 className={style.articles__title}>Відеоматеріали стосовно нашої роботи</h3>
         <Link to="not-ready" className={style.item}>
                 <Article img={"images/posters/notReady.jpg"} alt={"Кадр з відео Ветеринатори"} type={"Відео"} title={`"Ніхто не був готовий!"`} description={"Під час російської окупації у селищі Немішаєве не залишилось лікарів, згадує Олександр Шупик. А кількість поранених постійно зростала."}></Article>
         </Link>
